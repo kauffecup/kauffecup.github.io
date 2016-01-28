@@ -12,7 +12,7 @@ dl, dd, ol, ul, figure {
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
-  background-color: $background-color;
+  background-color: #fff;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -27,6 +27,14 @@ p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
   margin-bottom: $spacing-unit / 2;
+}
+
+hr {
+  border: none;
+  margin: 1.5rem 0;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  top: -1px;
 }
 
 /** Images */
@@ -57,18 +65,65 @@ li {
 h1, h2, h3, h4, h5, h6 {
   font-family: $title-font-family;
   font-weight: $title-font-weight;
+  margin: 0 0 0.5rem -0.1rem /* align left edge */;
+  text-rendering: optimizeLegibility;
+  line-height: 1.2
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+@media (min-width: 30rem) {
+  h1 {
+    margin-left: -2rem;
+    margin-right: -2rem;
+    font-size: 4rem;
+  }
+}
+h1 a {
+  color: inherit;
+}
+h2 {
+  margin-top: 2rem;
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin-right: -4rem;
+}
+@media (min-width: 30rem) {
+  h2 {
+    margin-top: 2.5rem;
+    font-size: 1.75rem;
+    margin-right: -4rem;
+  }
+}
+h3 {
+  margin: 2rem -2rem 1.75rem -2rem;
+  margin-top: 2rem;
+  font-size: 1.75rem;
+}
+@media (min-width: 30rem) {
+  h3 {
+    margin-top: 2.5rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+h4, h5, h6 {
+  margin: 1.5rem -1rem 1.5rem -1rem;
+  font-size: 1.5rem;
 }
 
 /** Links */
 a {
   color: $brand-color;
   text-decoration: none;
+  color: $brand-color;
 
   &:visited {
     color: darken($brand-color, 15%);
   }
 
-  &:hover {
+  &:hover, &:focus {
     color: $text-color;
     text-decoration: underline;
   }
@@ -76,12 +131,13 @@ a {
 
 /** Blockquotes */
 blockquote {
-  color: $grey-color;
-  border-left: 4px solid $grey-color-light;
   padding-left: $spacing-unit / 2;
   font-size: 18px;
-  letter-spacing: -1px;
-  font-style: italic;
+  margin-left: 0.75rem;
+  margin-right: 0;
+  padding: 0rem 0.8rem;
+  border-left: .3rem solid $grey-color-light;
+  color: $grey-color;
 
   > :last-child {
     margin-bottom: 0;
@@ -91,9 +147,7 @@ blockquote {
 /** Code formatting */
 pre, code {
   font-size: 15px;
-  border: 1px solid $grey-color-light;
-  border-radius: 3px;
-  background-color: #eef;
+  background-color: $background-color;
 }
 code {
   padding: 1px 5px;

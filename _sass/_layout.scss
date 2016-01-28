@@ -31,6 +31,7 @@
     }
     .social-media-list {
       justify-content: center;
+      margin-top: 10px;
       li {
         margin: 0 5px;
       }
@@ -136,7 +137,9 @@
 .post-list {
   margin-left: 0;
   list-style: none;
-
+  h2 {
+    margin: 0;
+  }
   > li {
     margin-bottom: $spacing-unit;
   }
