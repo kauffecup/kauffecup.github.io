@@ -25,12 +25,13 @@ here](http://nicolashery.com/integrating-d3js-visualizations-in-a-react-app/).
 In case you don't want to read that, they are:
 
   1. **One Source Of Truth**: The D3 visualization should get all of the data it
-  needs to render passed down to it. 1. **Stateless All The Things**: This is
-  related to (1). D3 and React components alike should be as stateless as
-  possible, i.e. they shouldn't hide/encapsulate something that makes them
-  render differently given the same "input". 1. **Don't Make Too Many
-  Assumptions**: This is related to (1) and (2). Components shouldn't make too
-  many assumptions about how they will be used.
+  needs to render passed down to it.
+  1. **Stateless All The Things**: This is related to (1). D3 and React
+  components alike should be as stateless as possible, i.e. they shouldn't
+  hide/encapsulate something that makes them render differently given the same
+  "input".
+  1. **Don't Make Too Many Assumptions**: This is related to (1) and (2).
+  Components shouldn't make too many assumptions about how they will be used.
 
 The goal is to keep our D3 component in the same lifecycle as our React
 component. This is surprisingly easy as both libraries follow similar
@@ -79,7 +80,7 @@ class ReactBubbleChart extends React.Component {
 export default ReactBubbleChart;
 {% endhighlight %}
 
- Pretty simple so far - when our React component is mounted we create our D3
+Pretty simple so far - when our React component is mounted we create our D3
 component, when our React component updates we update our D3 component, when
 our React component is removed we destroy our D3 component. We also give our D3
 component access to all of the props in our React component. This keeps them

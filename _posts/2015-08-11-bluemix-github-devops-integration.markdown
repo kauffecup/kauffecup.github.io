@@ -22,10 +22,11 @@ things easier to explain, not because this is a difficult process.
 
 Prerequisites:
 
-  1. A [Bluemix](https://bluemix.net/) account 1. An [IBM
-  Devops](https://hub.jazz.net/register) account 1. A
-  [Github](https://github.com/) account 1. Create a Bluemix Project 1. Push that
-  project's code to a Github Repo
+  1. A [Bluemix](https://bluemix.net/) account
+  1. An [IBM Devops](https://hub.jazz.net/register) account
+  1. A [Github](https://github.com/) account
+  1. Create a Bluemix Project
+  1. Push that project's code to a Github Repo
 
 ##Part 1: Configure your Devops project.
 

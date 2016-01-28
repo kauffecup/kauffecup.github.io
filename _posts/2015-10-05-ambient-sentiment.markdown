@@ -13,8 +13,8 @@ Analyzer](https://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/tone-
 in order to visualize the sentiment of my Slack channel in real time.
 
 *Don't worry, after these pictures there will be a lot of code, and if you want
-*to jump straight into it [find it/fork it on
-*github](https://github.com/kauffecup/blink1-sentiment).*
+to jump straight into it [find it/fork it on
+github](https://github.com/kauffecup/blink1-sentiment).*
 
 Whenever someone messages something angry, the blink(1) turns red:
 

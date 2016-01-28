@@ -16,7 +16,7 @@ pretty fun bar on top that you can slide and resize to adjust what timeframe
 you're looking at.
 
 *Note that [the app](http://electioninsights.mybluemix.net/) runs much better on
-*desktop than it does on mobile*
+desktop than it does on mobile*
 
 ![app photo](http://i.imgur.com/SqKHnBC.png)
 

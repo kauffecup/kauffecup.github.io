@@ -14,7 +14,7 @@ Here is an easy way to do that without using a proxy and without updating your
 local environment variables for every different project you're working on.
 
 **Note: this post is specific to using the Node.js runtime, but the same
-**technique can be applied to other runtimes.**
+technique can be applied to other runtimes.**
 
 If you navigate over to your environment variables for a given application in
 Bluemix, you'll see something like:
