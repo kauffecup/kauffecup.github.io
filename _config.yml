@@ -1,3 +1,5 @@
+environment: production
+
 # customization settings
 title: Jon Kaufman
 description: ramblings, code, ideas.
