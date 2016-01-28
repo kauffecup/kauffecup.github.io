@@ -1,34 +1,5 @@
 <footer class="site-footer">
   <div class="wrapper">
-    <h2 class="footer-heading">{{ site.title }}</h2>
-    <ul class="social-media-list">
-      <ul class="email-list">
-        <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-      </ul>
-      {% if site.github_username %}
-      <li>
-        {% include icon-github.html username=site.github_username %}
-      </li>
-      {% endif %}
-      {% if site.twitter_username %}
-      <li>
-        {% include icon-twitter.html username=site.twitter_username %}
-      </li>
-      {% endif %}
-      {% if site.linkedin_url %}
-      <li>
-        {% include icon-linkedin.html url=site.linkedin_url %}
-      </li>
-      {% endif %}
-      {% if site.instagram_username %}
-      <li>
-        {% include icon-instagram.html username=site.instagram_username %}
-      </li>
-      {% endif %}
-      <li>
-        {% include icon-rss.html baseurl=site.baseurl %}
-      </li>
-    </ul>
+    {% include social-media.html %}
   </div>
 </footer>
