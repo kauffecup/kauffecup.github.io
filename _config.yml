@@ -11,3 +11,6 @@ linkedin_url: https://www.linkedin.com/pub/jonathan-kaufman/a8/a21/77b
 
 # Build settings
 markdown: kramdown
+
+# Outputting
+permalink: /:title/
