@@ -21,6 +21,23 @@
   }
 }
 
+.home {
+  .header {
+    text-align: center;
+    img {
+      width: 145px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+    .social-media-list {
+      justify-content: center;
+      li {
+        margin: 0 5px;
+      }
+    }
+  }
+}
+
 .site-nav {
   float: right;
   line-height: 56px;
@@ -105,11 +122,6 @@
   margin-left: 0;
   display: flex;
   justify-content: space-between;
-}
-
-.email-list {
-  list-style: none;
-  margin-left: 0;
 }
 
 /** Page content */

@@ -2,7 +2,12 @@
 layout: default
 ---
 <div class="home">
-  <h1 class="page-heading">Posts</h1>
+  <div class="header">
+    <img alt="{{ site.title }}" src="{{ site.baseurl }}/{{ site.picture }}" />
+    <h1 class="">{{ site.title }}</h1>
+    <div class="">{{ site.description }}</div>
+    {% include social-media.html %}
+  </div>
   <ul class="post-list">
     {% for post in site.posts %}
       <li>

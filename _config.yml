@@ -1,16 +1,21 @@
-# Site settings
+# customization settings
 title: Jon Kaufman
+description: ramblings, code, ideas.
+bio: "ramblings, code, ideas."
+picture: "assets/images/profile.jpg"
+
 email: jdkaufman5@gmail.com
-description: Ramblings, code, and ideas.
-url: "http://jkaufman.io" # the base hostname & protocol for your site
-baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: kauffecup
 github_username: kauffecup
 instagram_username: jkauffe
 linkedin_url: https://www.linkedin.com/pub/jonathan-kaufman/a8/a21/77b
 
-# Build settings
+# site Settings
+url: "http://jkaufman.io" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+
+# build settings
 markdown: kramdown
 
-# Outputting
+# outputting
 permalink: /:title/
