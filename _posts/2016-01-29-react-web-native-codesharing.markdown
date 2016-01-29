@@ -75,8 +75,8 @@ ReactNativeWebHelloWorld
         +-- web.prod.config.js
 {% endhighlight %}
 
-The contents of [index.html][ix], [web.dev.config.js][wpd], and
-[web.prod.config.js][wpp] can all be found in the [GitHub][gh] repo - we'll dive
+The contents of [`index.html`][ix], [`web.dev.config.js`][wpd], and
+[`web.prod.config.js`][wpp] can all be found in the [GitHub][gh] repo - we'll dive
 into them more later (_but if you want to click on them now, by all means... do
 it!_).
 
@@ -230,8 +230,8 @@ and `app/web/containers/App.js` defines...
 {% endhighlight %}
 
 Both `dispatch` methods are injected via `react-redux`, and `toggleColor` is
-imported from the same `actions` file. *ONLY THE RENDERING IS DIFFERENT. THE
-APPLICATION LOGIC IS SHARED. It's a leap day miracle!*
+imported from the same `actions` file. *ONLY THE RENDERING IS DIFFERENT! THE
+APPLICATION LOGIC IS SHARED! It's a leap day miracle!*
 
 Rather than go through each individual difference and similarity one by one (as
 that would result in a novel's worth of explanation) we're going to move on to
@@ -252,7 +252,7 @@ There are 8 defined scripts in [package.json][pg]:
   1. `web-bundle`
   1. `web-dev`
 
-### start
+### `start`
 
 `start` is used when running/bundling the native application. When you open
 either the xcode project or the android studio project and hit "run", it
@@ -287,28 +287,7 @@ Every now and then, when React Native is doing it's thing, you'll swear that
 you've changed something, but alas it is still causing your app to break! oh
 noes! what do we do!
 
-Here's a gulp task that clears the react packager cache:
-
-{% highlight js %}
-/** Clear react-packager cache */
-gulp.task('clear-cache', function () {
-  var tempDir = os.tmpdir();
-
-  var cacheFiles = fs.readdirSync(tempDir).filter(function (fileName) {
-    return fileName.indexOf('react-packager-cache') === 0;
-  });
-
-  cacheFiles.forEach(function (cacheFile) {
-    var cacheFilePath = path.join(tempDir, cacheFile);
-    fs.unlinkSync(cacheFilePath);
-    console.log('Deleted cache: ', cacheFilePath);
-  });
-
-  if (!cacheFiles.length) {
-    console.log('No cache files found!');
-  }
-});
-{% endhighlight %}
+`npm run clear-cache`
 
 ## Further Configuration
 
