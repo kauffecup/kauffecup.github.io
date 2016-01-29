@@ -141,10 +141,9 @@ The most interesting rankings I've found are:
 
 *a person's tendency to think in symbols and abstractions*
 
-  1. [AskHistorians_SS](http://sscomments.mybluemix.net/#/author/AskHistorians_SS) -
-  98.45% 1.
-  1. [AskScience_SS](http://sscomments.mybluemix.net/#/author/AskScience_SS) -
-  97.55% 1. [math_SS](http://sscomments.mybluemix.net/#/author/math_SS) - 95.67%
+  1. [AskHistorians_SS](http://sscomments.mybluemix.net/#/author/AskHistorians_SS) - 98.45%
+  1. [AskScience_SS](http://sscomments.mybluemix.net/#/author/AskScience_SS) - 97.55%
+  1. [math_SS](http://sscomments.mybluemix.net/#/author/math_SS) - 95.67%
   1. [history_SS](http://sscomments.mybluemix.net/#/author/history_SS) - 94.57%
   1. [europe_SS](http://sscomments.mybluemix.net/#/author/europe_SS) - 94.28%
 
@@ -153,11 +152,10 @@ The most interesting rankings I've found are:
 *a person's tendency to seek stimulation in the company of others*
 
   1. [gonewild_SS](http://sscomments.mybluemix.net/#/author/gonewild_SS) - 100%
-  1. [relationships_SS](http://sscomments.mybluemix.net/#/author/relationships_SS) -
-  98.37% 1. [sex_SS](http://sscomments.mybluemix.net/#/author/sex_SS) - 96.44%
-  1. [confession_SS](http://sscomments.mybluemix.net/#/author/confession_SS) -
-  95.02% 1.
-  [seduction_SS](http://sscomments.mybluemix.net/#/author/seduction_SS) - 91.87%
+  1. [relationships_SS](http://sscomments.mybluemix.net/#/author/relationships_SS) - 98.37%
+  1. [sex_SS](http://sscomments.mybluemix.net/#/author/sex_SS) - 96.44%
+  1. [confession_SS](http://sscomments.mybluemix.net/#/author/confession_SS) - 95.02%
+  1. [seduction_SS](http://sscomments.mybluemix.net/#/author/seduction_SS) - 91.87%
 
 ####[Self-enhancement](tend to think in symbols and abstractions)
 
