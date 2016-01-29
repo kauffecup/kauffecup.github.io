@@ -2,20 +2,28 @@
 layout: default
 ---
 <div class="home">
-  <div class="header">
-    <img alt="{{ site.title }}" src="{{ site.baseurl }}/{{ site.picture }}" />
+  <div class="page-topper" style="background-image: url({{ site.basurl }}/{{ site.background }});">
     <h1 class="">{{ site.title }}</h1>
-    <div class="">{{ site.description }}</div>
-    {% include social-media.html %}
   </div>
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <div class="wrapper">
+    <div class="header">
+      <img alt="{{ site.title }}" src="{{ site.baseurl }}/{{ site.picture }}" />
+      <div>
+        <a class="" href="/about">about</a>
+      </div>
+      {% include social-media.html %}
+    </div>
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <a href="{{ post.url | prepend: site.baseurl }}">
+            <div>
+              <span class="post-list-title">{{ post.title }}</span>
+              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 </div>

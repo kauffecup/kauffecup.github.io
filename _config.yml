@@ -2,9 +2,10 @@ environment: production
 
 # customization settings
 title: Jon Kaufman
-description: ramblings, code, ideas.
+initials: JK
 bio: "ramblings, code, ideas."
 picture: "assets/images/profile.jpg"
+background: "assets/images/background.jpg"
 
 email: jdkaufman5@gmail.com
 twitter_username: kauffecup

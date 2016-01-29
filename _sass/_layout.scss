@@ -1,8 +1,8 @@
 /** Site header */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
   border-bottom: 1px solid $grey-color-light;
   min-height: 56px;
+  padding: 0px 40px;
 
   // Positioning context for the mobile navigation icon
   position: relative;
@@ -26,8 +26,14 @@
     text-align: center;
     img {
       width: 145px;
+      margin-top: -73px;
       border-radius: 50%;
       margin-bottom: 15px;
+      background-color: #fff;
+      border: 3px solid #fff;
+      -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
     }
     .social-media-list {
       justify-content: center;
@@ -43,10 +49,6 @@
   float: right;
   line-height: 56px;
 
-  .menu-icon {
-    display: none;
-  }
-
   .page-link {
     color: $text-color;
     line-height: $base-line-height;
@@ -56,54 +58,18 @@
       margin-right: 20px;
     }
   }
+}
 
-  @include media-query($on-palm) {
-    position: absolute;
-    top: 9px;
-    right: $spacing-unit / 2;
-    background-color: $background-color;
-    border: 1px solid $grey-color-light;
-    border-radius: 5px;
-    text-align: right;
-
-    .menu-icon {
-      display: block;
-      float: right;
-      width: 36px;
-      height: 26px;
-      line-height: 0;
-      padding-top: 10px;
-      text-align: center;
-
-      > svg {
-        width: 18px;
-        height: 15px;
-
-        path {
-          fill: $grey-color-dark;
-        }
-      }
-    }
-
-    .trigger {
-      clear: both;
-      display: none;
-    }
-
-    &:hover .trigger {
-      display: block;
-      padding-bottom: 5px;
-    }
-
-    .page-link {
-      display: block;
-      padding: 5px 10px;
-
-      &:not(:last-child) {
-        margin-right: 0;
-      }
-      margin-left: 20px;
-    }
+.page-topper {
+  height: 450px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    margin-top: 150px;
+    color: #fff;
   }
 }
 
@@ -127,7 +93,7 @@
 
 /** Page content */
 .page-content {
-  padding: $spacing-unit 0;
+  padding-bottom: $spacing-unit;
 }
 
 .page-heading {
@@ -137,6 +103,15 @@
 .post-list {
   margin-left: 0;
   list-style: none;
+  .post-list-title {
+    font-size: 1.3rem;
+    line-height: $base-line-height;
+  }
+  .post-meta {
+    float: right;
+    line-height: $base-line-height;
+    margin-top: 10px;
+  }
   h2 {
     margin: 0;
   }
@@ -161,6 +136,7 @@
 }
 
 .post-title {
+  margin-top: $spacing-unit;
   font-size: 42px;
   letter-spacing: -1px;
   line-height: 1;

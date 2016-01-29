@@ -67,7 +67,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $title-font-weight;
   margin: 0 0 0.5rem -0.1rem /* align left edge */;
   text-rendering: optimizeLegibility;
-  line-height: 1.2
+  line-height: 1.2;
+  color: $brand-color;
 }
 h1 {
   font-size: 2.5rem;
@@ -121,11 +122,6 @@ h4, h5, h6 {
 a {
   color: $brand-color;
   text-decoration: none;
-  color: $brand-color;
-
-  &:visited {
-    color: darken($brand-color, 15%);
-  }
 
   &:hover, &:focus {
     color: $text-color;
@@ -202,6 +198,9 @@ pre {
 
     path {
       fill: $grey-color;
+    }
+    &:hover path {
+      fill: $brand-color;
     }
   }
 }
