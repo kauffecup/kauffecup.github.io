@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "React Web + Native Codesharing"
+title:  "Sharing Code between React Web and Native Apps"
 date:   2016-01-29 10:35:44 -0500
 categories: react reactnative
 ---
@@ -27,7 +27,8 @@ between your two implementations?*
 Let me just say right off the bat that React Native/React wasn't designed to be
 a "write once, run everywhere" framework. Facebook constantly calls it a "learn
 once, write everywhere" framework - the idea being that you tailor your
-implementation to the platform you're writing for.
+implementation to the platform you're writing for. That said, you can still
+share a great deal of logic between your applications.
 
 In this post I'll be discussing how you can take a more "middle of the road"
 approach between these mentalities. We'll be sharing all the application logic
@@ -83,21 +84,11 @@ After our directory structure is configured, we install the dependencies we'll
 be needing for the application:
 
 {% highlight bash %}
-$ npm install --save babel babel-polyfill clone morgan object-assign react
-react-dom react-native react-redux@3.1.2 redux redux-thunk superagent
+$ npm install --save babel babel-polyfill ...
+$ npm install --save-dev autoprefixer babel-core ...
 {% endhighlight %}
 
-...and for development:
-
-{% highlight bash %}
-$ npm install --save-dev autoprefixer autoprefixer-loader babel-core
-babel-loader babel-plugin-react-transform babel-preset-es2015
-babel-preset-react css-loader gulp less less-loader react-native-cli
-react-transform-catch-errors react-transform-hmr redbox-react
-redux-devtools redux-devtools-dock-monitor redux-devtools-log-monitor
-redux-logger style-loader webpack webpack-dev-middleware
-webpack-dev-server webpack-hot-middleware
-{% endhighlight %}
+For a full list of dependencies, check out the [`package.json`][pg].
 
 For the final bit of set up (_woo!_), we initialize all of the files for our
 actual application. We'll be making a fairly "traditional" React/Redux app:
