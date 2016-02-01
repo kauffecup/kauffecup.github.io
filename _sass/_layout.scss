@@ -112,8 +112,10 @@
 }
 
 .post-list {
-  margin-left: 0;
-  list-style: none;
+  &, ul {
+    margin-left: 0;
+    list-style: none;
+  }
   .post-list-title {
     font-size: 1.3rem;
     line-height: $base-line-height;
@@ -121,7 +123,7 @@
   .post-meta {
     float: right;
     line-height: $base-line-height;
-    margin-top: 10px;
+    margin-top: 7px;
   }
   h2 {
     margin: 0;

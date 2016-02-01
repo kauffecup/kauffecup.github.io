@@ -8,6 +8,13 @@ format: full
 <div class="home">
   <ul class="post-list">
     {% for post in site.posts %}
+      {% assign currentdate = post.date | date: "%B %Y" %}
+      {% if currentdate != date %}
+        {% unless forloop.first %}</ul>{% endunless %}
+        <h4 id="y{{post.date | date: "%B %Y"}}">{{ currentdate }}</h4>
+        <ul>
+        {% assign date = currentdate %}
+      {% endif %}
       <li>
         <a href="{{ post.url | prepend: site.baseurl }}">
           <div>
@@ -16,6 +23,7 @@ format: full
           </div>
         </a>
       </li>
+      {% if forloop.last %}</ul>{% endif %}
     {% endfor %}
   </ul>
 </div>
