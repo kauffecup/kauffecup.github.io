@@ -1,0 +1,15 @@
+---
+layout: post
+---
+{% if page.slidr and page.dataCardKey %}
+  <a class="embedly-card" data-card-key="{{page.dataCardKey}}" data-card-chrome="0" data-card-controls="0" href="{{page.slidr}}">{{page.title}}</a>
+  <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+{% endif %}
+{% if page.blog or page.gitHub %}
+  <div class="related-links">
+    {% if page.blog %}<a href="{{site.baseurl}}/{{page.blog}}">Related blog post</a>{% endif %}
+    {% if page.gitHub %}<a href="{{page.gitHub}}">Relate GitHub Repo</a>{% endif %}
+  </div>
+{% endif %}
+<p>{{page.abstract}}</p>
+{{content}}

@@ -194,4 +194,10 @@
       font-size: 18px;
     }
   }
+
+  .related-links {
+    padding: $spacing-unit;
+    display: flex;
+    justify-content: space-around;
+  }
 }
