@@ -1,8 +1,7 @@
 ---
 layout: post
-title:  "React + D3 = <3"
-date:   2015-09-09 15:22:08 -0500
-categories: react d3
+title: "React + D3 = <3"
+tags: [react, d3]
 ---
 
 TL;DR - Using D3 with React is awesome. I put an animated bubble chart React+D3

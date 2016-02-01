@@ -1,8 +1,7 @@
 ---
 layout: post
-title:  "Deploying Hubot on Bluemix"
-date:   2015-12-10 13:25:48 -0500
-categories: bluemix
+title: "Deploying Hubot on Bluemix"
+tags: [bluemix, hubot]
 ---
 
 *Update: These instructions have been merged in to Github's repo via [Hubot Pull

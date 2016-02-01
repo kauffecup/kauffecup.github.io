@@ -1,8 +1,7 @@
 ---
 layout: post
-title:  "Why All Developer Conferences Should Be Held in a Cinema"
-date:   2015-10-02 10:25:18 -0500
-categories: conferences
+title: "Why All Developer Conferences Should Be Held in a Cinema"
+tags: [conferences]
 ---
 
 This week I was at [code.talks](https://www.codetalks.de/) in Hamburg, and let

@@ -6,6 +6,7 @@ location: Zendcon
 locationURL: http://www.zendcon.com/session#node-299
 dataCardKey: c7eb2be95ffc4d709de201b870895b9b
 slidr: https://slidr.io/kauffecup/destination-cloud-deploying-applications-to-the-cloud-with-docker
+tags: [bluemix, docker]
 abstract: >
   Our news feeds are full of stories talking about the failures and successes of
   companies that have moved applications to the cloud. Ultimately the consensus

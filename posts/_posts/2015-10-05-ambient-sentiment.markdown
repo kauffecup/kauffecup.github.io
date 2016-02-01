@@ -1,8 +1,7 @@
 ---
 layout: post
-title:  "Ambient Sentiment"
-date:   2015-10-05 16:11:11 -0500
-categories: watson demo
+title: "Ambient Sentiment"
+tags: [watson, slack]
 image: assets/images/post-images/ambient-sentiment-header.jpg
 ---
 

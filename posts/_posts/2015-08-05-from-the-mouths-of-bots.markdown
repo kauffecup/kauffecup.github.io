@@ -1,8 +1,7 @@
 ---
 layout: post
-title:  "From the Mouths of Bots"
-date:   2015-08-05 17:15:08 -0500
-categories: watson demo reddit
+title: "From the Mouths of Bots"
+tags: [watson, reddit, cloudant]
 image: assets/images/post-images/bot-header.jpg
 ---
 

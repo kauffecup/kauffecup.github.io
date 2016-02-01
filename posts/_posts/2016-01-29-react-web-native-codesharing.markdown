@@ -2,7 +2,7 @@
 layout: post
 title:  "Sharing Code between React Web and Native Apps"
 date:   2016-01-29 10:35:44 -0500
-categories: react reactnative
+tags: [react, react-native]
 image: assets/images/post-images/react-web-native-header.jpg
 ---
 

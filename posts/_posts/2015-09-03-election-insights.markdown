@@ -1,8 +1,7 @@
 ---
 layout: post
-title:  "Election Insights"
-date:   2015-09-03 16:47:20 -0500
-categories: watson demo
+title: "Election Insights"
+tags: [watson, alchemy, mongodb]
 image: assets/images/post-images/election-header.jpg
 ---
 

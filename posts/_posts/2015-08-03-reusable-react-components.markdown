@@ -1,8 +1,7 @@
 ---
 layout: post
-title:  "Creating Reusable React Components"
-date:   2015-08-03 13:38:20 -0500
-categories: react
+title: "Creating Reusable React Components"
+tags: react
 ---
 
 Hold on to your hats, kids, this one's got a lot of code.

@@ -1,8 +1,7 @@
 ---
 layout: post
-title:  "Building a Bluemix Pipeline with GitHub"
-date:   2015-08-11 10:15:38 -0500
-categories: bluemix
+title: "Building a Bluemix Pipeline with GitHub"
+tags: bluemix
 ---
 
 Continuous delivery is awesome. Nothing beats the ease of delivering code and

@@ -1,8 +1,7 @@
 ---
 layout: post
-title:  "Simplify Your Node App"
-date:   2016-01-07 15:48:44 -0500
-categories: node
+title: "Simplify Your Node App"
+tags: node
 ---
 
 I used to be a believer in the monolithic Node App; a single place housing all
