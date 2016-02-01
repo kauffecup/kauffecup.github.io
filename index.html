@@ -1,29 +1,8 @@
 ---
-layout: default
+layout: list
 image: assets/images/background.jpg
 logo: "assets/images/profile.jpg"
 text: "Jon Kaufman"
+category: posts
 format: full
 ---
-<div class="home">
-  <ul class="post-list">
-    {% for post in site.posts %}
-      {% assign currentdate = post.date | date: "%B %Y" %}
-      {% if currentdate != date %}
-        {% unless forloop.first %}</ul>{% endunless %}
-        <h4 id="y{{post.date | date: "%B %Y"}}">{{ currentdate }}</h4>
-        <ul>
-        {% assign date = currentdate %}
-      {% endif %}
-      <li>
-        <a href="{{ post.url | prepend: site.baseurl }}">
-          <div>
-            <span class="post-list-title">{{ post.title }}</span>
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-          </div>
-        </a>
-      </li>
-      {% if forloop.last %}</ul>{% endif %}
-    {% endfor %}
-  </ul>
-</div>
