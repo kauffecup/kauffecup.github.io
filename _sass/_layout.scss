@@ -86,8 +86,20 @@
 
 /** Site footer */
 .site-footer {
-  border-top: 1px solid $grey-color-light;
-  padding: $spacing-unit 0;
+  position: relative;
+  padding: $spacing-unit;
+  &::before {
+    $site-footer-before-width: 70%;
+    content: '';
+    position: absolute;
+    width: $site-footer-before-width;
+    height: 0px;
+    border-bottom: 3px solid $brand-color;
+    top: -5px;
+    display: block;
+    left: 50%;
+    margin-left: -1 * $site-footer-before-width / 2;
+  }
 }
 
 .footer-heading {
