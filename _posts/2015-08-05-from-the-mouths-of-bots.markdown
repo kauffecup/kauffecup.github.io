@@ -3,6 +3,7 @@ layout: post
 title:  "From the Mouths of Bots"
 date:   2015-08-05 17:15:08 -0500
 categories: watson demo reddit
+image: assets/images/post-images/bot-header.jpg
 ---
 
 TL;DR - I used IBM Watson APIs and Bluemix to perform a personality analysis on

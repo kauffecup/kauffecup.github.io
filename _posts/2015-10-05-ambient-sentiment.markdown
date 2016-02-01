@@ -3,6 +3,7 @@ layout: post
 title:  "Ambient Sentiment"
 date:   2015-10-05 16:11:11 -0500
 categories: watson demo
+image: assets/images/post-images/ambient-sentiment-header.jpg
 ---
 
 Last week I picked up a [blink(1)](https://blink1.thingm.com/) at a conference,

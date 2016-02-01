@@ -1,29 +1,21 @@
 ---
 layout: default
+image: assets/images/background.jpg
+logo: "assets/images/profile.jpg"
+text: "Jon Kaufman"
+format: full
 ---
 <div class="home">
-  <div class="page-topper" style="background-image: url({{ site.basurl }}/{{ site.background }});">
-    <h1 class="">{{ site.title }}</h1>
-  </div>
-  <div class="wrapper">
-    <div class="header">
-      <img alt="{{ site.title }}" src="{{ site.baseurl }}/{{ site.picture }}" />
-      <div>
-        <a class="" href="/about">about</a>
-      </div>
-      {% include social-media.html %}
-    </div>
-    <ul class="post-list">
-      {% for post in site.posts %}
-        <li>
-          <a href="{{ post.url | prepend: site.baseurl }}">
-            <div>
-              <span class="post-list-title">{{ post.title }}</span>
-              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-            </div>
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url | prepend: site.baseurl }}">
+          <div>
+            <span class="post-list-title">{{ post.title }}</span>
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          </div>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
 </div>

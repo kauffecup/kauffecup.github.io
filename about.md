@@ -2,6 +2,8 @@
 layout: page
 title: About
 permalink: /about/
+image: assets/images/about.jpg
+format: full
 ---
 
 I'm a developer advocate for [IBM Bluemix](https://bluemix.net), living in
