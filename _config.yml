@@ -21,3 +21,88 @@ markdown: kramdown
 
 # outputting
 permalink: /:title/
+
+# prose.io configuration
+prose:
+  siteurl: "http://jkaufman.io/"
+  relativeLinks: "http://prose.github.io/starter/links.jsonp"
+  media: "assets/images"
+  metadata:
+    posts/_posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
+      - name: "tags"
+        field:
+          label: "tags"
+          element: "text"
+          placeholder: "[react, node]"
+      - name: "image"
+        field:
+          label: "image"
+          element: "text"
+          placeholder: "assets/image/whatever.jpg"
+    talks/_posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "talk"
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
+      - name: "subtitle"
+        field:
+          label: "subtitle"
+          element: "text"
+          placeholder: "Deploying Application in the Cloud"
+      - name: "image"
+        field:
+          label: "image"
+          element: "text"
+          placeholder: "assets/image/whatever.jpg"
+      - name: "location"
+        field:
+          label: "location"
+          element: "text"
+          placeholder: "React Boston"
+      - name: "locationURL"
+        field:
+          label: "locationURL"
+          element: "text"
+          placeholder: "http://www.meetup.com/ReactJS-Boston/events/226726417/"
+      - name: "gitHub"
+        field:
+          label: "related gitHub repo"
+          element: "text"
+          placeholder: "https://github.com/kauffecup/react-d3-examples"
+      - name: "blog"
+        field:
+          label: "related blog title"
+          element: "text"
+          placeholder: "react-d3-love"
+      - name: "slidr"
+        field:
+          label: "slidr"
+          element: "text"
+          placeholder: "https://slidr.io/kauffecup/react-d3-3"
+      - name: "dataCardKey"
+        field:
+          label: "dataCardKey"
+          element: "text"
+          placeholder: "c7eb2be95ffc4d709de201b870895b9b"
+      - name: "tags"
+        field:
+          label: "tags"
+          element: "text"
+          placeholder: "[react, node]"
+      - name: "abstract"
+        field:
+          label: "abstract"
+          element: "textarea"
+          placeholder: "c7eb2be95ffc4d709de201b870895b9b"
