@@ -3,7 +3,7 @@ environment: production
 # customization settings
 title: Jon Kaufman
 initials: JK
-bio: "ramblings, code, ideas."
+description: "ramblings, code, ideas."
 
 email: jdkaufman5@gmail.com
 twitter_username: kauffecup
@@ -18,9 +18,17 @@ baseurl: "" # the subpath of your site, e.g. /blog
 # build settings
 future: true
 markdown: kramdown
+exclude:
+  - CNAME
+  - links.jsonp
+  - server.sh
 
 # outputting
 permalink: /:title/
+
+# automatically generate a sitemap
+gems:
+  - jekyll-sitemap
 
 # prose.io configuration
 prose:
@@ -37,16 +45,21 @@ prose:
         field:
           element: "text"
           label: "title"
-      - name: "tags"
-        field:
-          label: "tags"
-          element: "text"
-          placeholder: "[react, node]"
       - name: "image"
         field:
           label: "image"
           element: "text"
           placeholder: "assets/image/whatever.jpg"
+      - name: "tags"
+        field:
+          label: "tags"
+          element: "text"
+          placeholder: "[react, node]"
+      - name: "description"
+        field:
+          label: "description"
+          element: "textarea"
+          placeholder: "about this page - to be used for SEO"
     talks/_posts:
       - name: "layout"
         field:
