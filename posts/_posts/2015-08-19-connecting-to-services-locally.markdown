@@ -2,6 +2,9 @@
 layout: post
 title: "Connecting to Bluemix Services Locally"
 tags: bluemix
+description: >
+  How to connect to IBM Bluemix (or any Cloud Foundry provider) services when
+  running your development environment.
 ---
 
 When developing, it's nice to run locally and connect to the same services and

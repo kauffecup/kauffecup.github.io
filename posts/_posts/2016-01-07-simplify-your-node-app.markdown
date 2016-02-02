@@ -2,6 +2,10 @@
 layout: post
 title: "Simplify Your Node App"
 tags: node
+description: >
+  Monolithic apps are going out of style left and right. Without diving into a
+  discussion on microservice-based architecture, this is why you should
+  split your Node App in half.
 ---
 
 I used to be a believer in the monolithic Node App; a single place housing all

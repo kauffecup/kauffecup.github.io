@@ -2,6 +2,10 @@
 layout: post
 title: "React + D3 = <3"
 tags: [react, d3]
+description: >
+  React is perfect for structuring the view layer of your app, and D3 is perfect
+  for data-based visualizations. Here we'll discuss combining them with as few
+  side-effects as possible.
 ---
 
 TL;DR - Using D3 with React is awesome. I put an animated bubble chart React+D3

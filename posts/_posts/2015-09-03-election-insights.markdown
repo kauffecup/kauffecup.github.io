@@ -3,6 +3,9 @@ layout: post
 title: "Election Insights"
 tags: [watson, alchemy, mongodb]
 image: assets/images/post-images/election-header.jpg
+description: >
+  The 'how' and 'why' between building an app that analyzes and visualizes news
+  about the election in real time. It uses React + D3 for the visualization.
 ---
 
 Let's talk about the election, shall we?

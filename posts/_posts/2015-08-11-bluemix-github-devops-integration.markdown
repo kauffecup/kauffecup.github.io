@@ -2,6 +2,9 @@
 layout: post
 title: "Building a Bluemix Pipeline with GitHub"
 tags: bluemix
+description: >
+  How to set up a continuous delivery Pipeline connected to GitHub in IBM
+  Bluemix. Build stage, test stage, deploy stage... you name it!
 ---
 
 Continuous delivery is awesome. Nothing beats the ease of delivering code and

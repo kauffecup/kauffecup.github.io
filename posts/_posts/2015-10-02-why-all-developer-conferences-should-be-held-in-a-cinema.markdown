@@ -2,6 +2,8 @@
 layout: post
 title: "Why All Developer Conferences Should Be Held in a Cinema"
 tags: [conferences]
+description: >
+  The best AV in town, comfy stadium seating, and popcorn. Need I say more?
 ---
 
 This week I was at [code.talks](https://www.codetalks.de/) in Hamburg, and let

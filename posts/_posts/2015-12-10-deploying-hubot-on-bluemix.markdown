@@ -2,6 +2,8 @@
 layout: post
 title: "Deploying Hubot on Bluemix"
 tags: [bluemix, hubot]
+description: >
+  How to deploy GitHub's Hubot on IBM's PaaS Bluemix
 ---
 
 *Update: These instructions have been merged in to Github's repo via [Hubot Pull

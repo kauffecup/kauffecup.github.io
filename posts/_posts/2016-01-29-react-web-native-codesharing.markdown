@@ -4,6 +4,9 @@ title:  "Sharing Code between React Web and Native Apps"
 date:   2016-01-29 10:35:44 -0500
 tags: [react, react-native]
 image: assets/images/post-images/react-web-native-header.jpg
+description: >
+ How to share application logic between a React Web app and a React native app,
+ while keeping the individual component rendering unique to each platform.
 ---
 
 *TL;DR: Here's a way to share application logic between a React Web app and a

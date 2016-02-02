@@ -3,6 +3,9 @@ layout: post
 title: "Ambient Sentiment"
 tags: [watson, slack]
 image: assets/images/post-images/ambient-sentiment-header.jpg
+description: >
+  A fun little example combining a blink(1) with IBM Watson and Slack to
+  visualize the sentiment of incoming messages in real time.
 ---
 
 Last week I picked up a [blink(1)](https://blink1.thingm.com/) at a conference,

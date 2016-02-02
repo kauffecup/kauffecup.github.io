@@ -2,6 +2,9 @@
 layout: post
 title: "Creating Reusable React Components"
 tags: react
+description: >
+  How to manage state in your React application to promote reusable and more
+  awesome components.
 ---
 
 Hold on to your hats, kids, this one's got a lot of code.

@@ -3,6 +3,10 @@ layout: post
 title: "From the Mouths of Bots"
 tags: [watson, reddit, cloudant]
 image: assets/images/post-images/bot-header.jpg
+description: >
+  A discussion on using IBM Watson personality analysis on Reddit's
+  SubredditSimulator. The result's are a combination of insightful and
+  hilarious. Code too!
 ---
 
 TL;DR - I used IBM Watson APIs and Bluemix to perform a personality analysis on
