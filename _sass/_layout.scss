@@ -44,7 +44,7 @@
       }
     }
     &::after {
-      $site-nav-after-width: 80px;
+      $site-nav-after-width: 100px;
       content: '';
       position: absolute;
       width: $site-nav-after-width;
@@ -123,28 +123,26 @@
   font-size: 20px;
 }
 
-.post-list {
+.list-of-things {
   &, ul {
     margin-left: 0;
     list-style: none;
   }
-  .post-list-title {
-    font-size: 1.3rem;
+  .thing-title {
+    font-size: 1.17rem;
     line-height: $base-line-height;
   }
-  .post-meta {
+  .thing-meta {
     float: right;
+    color: $grey-color;
     line-height: $base-line-height;
     margin-top: 7px;
   }
-  h2 {
-    margin: 0;
+  h3 {
+    margin: 50px 0px 20px;
   }
   li {
-    margin-bottom: $spacing-unit;
-    .archive-group & {
-      margin-bottom: $spacing-unit / 2;
-    }
+    margin-bottom: 10px;
   }
 }
 

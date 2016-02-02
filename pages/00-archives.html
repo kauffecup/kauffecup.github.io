@@ -1,0 +1,20 @@
+---
+layout: page
+permalink: /archives/
+title: Archives
+image: assets/images/archives.jpg
+format: full
+hide: true
+---
+
+<ul class="list-of-things">
+{% for tag in site.tags %}
+  {% capture tag_name %}{{ tag | first }}{% endcapture %}
+  {% include slug.html name=tag_name %}
+  <ul>
+    {% for post in site.tags[tag_name] %}
+      {% include list-item.html url=post.url title=post.title date=post.date %}
+    {% endfor %}
+  </ul>
+{% endfor %}
+</ul>

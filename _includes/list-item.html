@@ -1,0 +1,8 @@
+<li class="list-item">
+  <a href="{{ include.url | prepend: site.baseurl }}">
+    <div>
+      <span class="thing-title">{{ include.title }}</span>
+      <span class="thing-meta">{{ include.date | date: "%b %-d, %Y" }}</span>
+    </div>
+  </a>
+</li>
