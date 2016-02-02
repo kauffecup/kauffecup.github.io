@@ -161,7 +161,7 @@ The most interesting rankings I've found are:
   1. [confession_SS](http://sscomments.mybluemix.net/#/author/confession_SS) - 95.02%
   1. [seduction_SS](http://sscomments.mybluemix.net/#/author/seduction_SS) - 91.87%
 
-####[Self-enhancement](tend to think in symbols and abstractions)
+####[Self-enhancement](http://sscomments.mybluemix.net/#/category/Self_enhancement)
 
 *a person's tendency to seek personal success for themselves*
 

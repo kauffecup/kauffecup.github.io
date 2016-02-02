@@ -13,8 +13,8 @@ component on npm. You can find that
 [here](https://www.npmjs.com/package/react-bubble-chart). The code for it is
 [here](https://github.com/kauffecup/react-bubble-chart). The initial code was
 developed for the "Election Insights" app that I built (blog post on that
-[here](www.jkaufman.io/election-insights/), the app itself
-[here](electioninsights.mybluemix.net)). If you want to read more about how it
+[here](/election-insights), the app itself
+[here](http://electioninsights.mybluemix.net)). If you want to read more about how it
 was done, keep scrollin'.
 
 ![gif](http://i.imgur.com/OQEdgOW.gif)
