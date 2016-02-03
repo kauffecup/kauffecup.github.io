@@ -21,7 +21,7 @@ technique can be applied to other runtimes.**
 If you navigate over to your environment variables for a given application in
 Bluemix, you'll see something like:
 
-{% highlight js %}
+~~~js
 {
   "user-provided": [
     {
@@ -43,12 +43,12 @@ Bluemix, you'll see something like:
     }
   ]
 }
-{% endhighlight %}
+~~~
 
 When developing locally, I like making a `VCAP_SERVICES.json` file that is
 identical. I then make a `vcapServices.js` node module that looks like:
 
-{% highlight js %}
+~~~js
 var vcapServices;
 // if running in Bluemix, use the environment variables
 if (process.env.VCAP_SERVICES) {
@@ -62,7 +62,7 @@ if (process.env.VCAP_SERVICES) {
   }
 }
 module.exports = vcapServices;
-{% endhighlight %}
+~~~
 
 This abstracts out the differences between running in Bluemix and running
 locally. To reference your credentials for different services, all you need to
@@ -70,13 +70,13 @@ do is load in this module and use it like a JSON object.
 
 For example, to connect to MongoLab...
 
-{% highlight js %}
+~~~js
 import mongoose     from 'mongoose';
 import vcapServices from './vcapServices';
 
 var mongoUri = vcapServices.mongolab[0].credentials.uri;
 mongoose.connect(mongoUri);
-{% endhighlight %}
+~~~
 
 Just make sure to add `path/to/VCAP_SERVICES.json` to both your `.gitignore` and
 `.cfignore`!

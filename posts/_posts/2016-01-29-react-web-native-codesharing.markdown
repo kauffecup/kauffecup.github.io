@@ -46,14 +46,14 @@ We'll be assuming some knowledge of [React][r], [React Native][rn], and
 First we need to initialize our project. We're going to follow the steps
 dictated in Facebook's [getting started][gs] guide:
 
-{% highlight bash %}
+~~~bash
 $ npm install -g react-native-cli
 $ react-native init ReactNativeWebHelloWorld
-{% endhighlight %}
+~~~
 
 We now have a directory that looks like:
 
-{% highlight bash %}
+~~~bash
 ReactNativeWebHelloWorld
 |-- android
 |-- ios
@@ -64,12 +64,12 @@ ReactNativeWebHelloWorld
 |-- index.android.js
 |-- index.ios.js
 +-- package.json
-{% endhighlight %}
+~~~
 
 This contains all the files we'll need for both our iOS and Android app. We now
 create the following directories and files to configure and run our Web app:
 
-{% highlight bash %}
+~~~bash
 ReactNativeWebHelloWorld
 +-- web
     |-- public
@@ -77,7 +77,7 @@ ReactNativeWebHelloWorld
     +-- webpack
         |-- web.dev.config.js
         +-- web.prod.config.js
-{% endhighlight %}
+~~~
 
 The contents of [`index.html`][ix], [`web.dev.config.js`][wpd], and
 [`web.prod.config.js`][wpp] can all be found in the [GitHub][gh] repo - we'll dive
@@ -87,17 +87,17 @@ it!_).
 After our directory structure is configured, we install the dependencies we'll
 be needing for the application:
 
-{% highlight bash %}
+~~~bash
 $ npm install --save babel babel-polyfill ...
 $ npm install --save-dev autoprefixer babel-core ...
-{% endhighlight %}
+~~~
 
 For a full list of dependencies, check out the [`package.json`][pg].
 
 For the final bit of set up (_woo!_), we initialize all of the files for our
 actual application. We'll be making a fairly "traditional" React/Redux app:
 
-{% highlight bash %}
+~~~bash
 ReactNativeWebHelloWorld
 +-- app
     |-- actions
@@ -112,7 +112,7 @@ ReactNativeWebHelloWorld
         |-- components
         |-- containers
         +-- style
-{% endhighlight %}
+~~~
 
 At this point it should be getting fairly clear what's going on. We have three
 different entry points for our three different apps: `index.ios.js`,
@@ -128,7 +128,7 @@ native and web.
 
 Let's look at the app entry points, shall we? `index.ios.js` looks like:
 
-{% highlight js %}
+~~~js
 import React, { Component, AppRegistry } from 'react-native';
 import Root           from './app/native/containers/Root';
 import configureStore from './app/store/configureStore.prod.js';
@@ -144,11 +144,11 @@ class ReactNativeHelloWorld extends Component {
 }
 
 AppRegistry.registerComponent('ReactNativeWebHelloWorld', () => ReactNativeHelloWorld);
-{% endhighlight %}
+~~~
 
 And `app/web/index.js`...
 
-{% highlight js %}
+~~~js
 import React          from 'react';
 import { render }     from 'react-dom';
 import Root           from './containers/Root';
@@ -161,7 +161,7 @@ const store = configureStore();
 const rootElement = document.getElementById('root');
 
 render( <Root store={store} />, rootElement );
-{% endhighlight %}
+~~~
 
 Ok, so what are the differences that we care about?
 
@@ -182,7 +182,7 @@ each platform.*
 Let's also examine the `HelloWorld` component's `render` method in both cases.
 In Native, it looks like:
 
-{% highlight js %}
+~~~js
 render() {
   const { onPress, color } = this.props;
   const style = StyleSheet.create({
@@ -194,18 +194,18 @@ render() {
     </View>
   );
 }
-{% endhighlight %}
+~~~
 
 And for web, it looks like:
 
-{% highlight js %}
+~~~js
 render() {
   const { onClick, color } = this.props;
   return (
     <div className="hello-world" onClick={onClick} style={ {color: color} }>Hello World</div>
   );
 }
-{% endhighlight %}
+~~~
 
 This reinforces that point in bold up there about why we need to keep the
 rendering logic unique to each platform. React native deals in `<View>`s and
@@ -217,21 +217,21 @@ both the event system and style system are different.
 When instantiating the `HelloWorld` component, `app/native/containers/App.js`
 defines...
 
-{% highlight js %}
+~~~js
 <HelloWorld
   onPress={() => dispatch(toggleColor())}
   color={color}
 />
-{% endhighlight %}
+~~~
 
 and `app/web/containers/App.js` defines...
 
-{% highlight js %}
+~~~js
 <HelloWorld
   onClick={() => dispatch(toggleColor())}
   color={color}
 />
-{% endhighlight %}
+~~~
 
 Both `dispatch` methods are injected via `react-redux`, and `toggleColor` is
 imported from the same `actions` file. *ONLY THE RENDERING IS DIFFERENT! THE

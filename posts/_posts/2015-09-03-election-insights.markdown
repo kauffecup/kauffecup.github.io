@@ -72,35 +72,35 @@ election, but hey... wanna bet?
 
 The query to Alchemy looks like:
 
-{% highlight bash %}
+~~~bash
 q.enriched.url.enrichedTitle.taxonomy.taxonomy_=|label=elections,score=>0.75|
-{% endhighlight %}
+~~~
 
 This says to Alchemy, "return the articles that we're reasonably confident are
 about elections, please." The fields we're interested in are:
 
-{% highlight bash %}
+~~~bash
 enriched.url.title
 enriched.url.url
 enriched.url.entities.entity.sentiment.score
 enriched.url.entities.entity.count
 enriched.url.entities.entity.text
-{% endhighlight %}
+~~~
 
 After parsing the return, Article objects look like:
 
-{% highlight js %}
+~~~js
 {
   _id: string,
   title: string,
   date: Date,
   url: string
 }
-{% endhighlight %}
+~~~
 
 and Entities look like:
 
-{% highlight js %}
+~~~js
 {
   _id: string,
   article_id: number,
@@ -109,7 +109,7 @@ and Entities look like:
   count: number,
   sentiment: number
 }
-{% endhighlight %}
+~~~
 
 Note that each entity ties back to an article - the sentiment is how *that
 article* "feels" about this entity, and the count is how many times that article
@@ -138,7 +138,7 @@ in unnecessary overhead - both with memory and with speed.
 Mongo's Aggregation pipeline, while not full map reduce, provides exactly what I
 need. Everything boils down to this awesome function:
 
-{% highlight js %}
+~~~js
 aggregateEntities: function (start, end, limit) {
   return new Promise(function (resolve, reject) {
     start = start || 0;
@@ -160,7 +160,7 @@ aggregateEntities: function (start, end, limit) {
     );
   });
 }
-{% endhighlight %}
+~~~
 
 It matches the subset of entities by date, groups them by their text, sums the
 counts, averages the sentiment, sorts them by their value descending, and limits

@@ -56,17 +56,17 @@ that could get pretty interesting too.
 
 First we have all of our imports:
 
-{% highlight js %}
+~~~js
 import Blink1    from 'node-blink1';
 import Promise   from 'bluebird';
 import toneAsync from './toneAsync';
 import Slack     from 'slack-client';
 import fs        from 'fs';
-{% endhighlight %}
+~~~
 
 And then we define a few constants:
 
-{% highlight js %}
+~~~js
 // the token we'll use to authenticate w/ slack
 const SLACK_TOKEN = process.env.SLACK_TOKEN || fs.readFileSync('./SLACK_TOKEN.txt', 'utf8');
 // Automatically reconnect after an error response from Slack
@@ -75,22 +75,22 @@ const AUTO_RECCONECT = true;
 const AUTO_MARK = true;
 // the time it takes to fade da blinker's colorz
 const FADE_TIME = 1000;
-{% endhighlight %}
+~~~
 
 Once that's taken care of, we initialize the blink(1):
 
-{% highlight js %}
+~~~js
 var blink = Promise.promisifyAll(new Blink1());
 blink.off();
 blink.setRGB(0, 0, 0);
-{% endhighlight %}
+~~~
 
 *The RGB value has to be set in order for the `fadeToRGB` method (used later in
 *the code) to work. This is why we initialize it to (0,0,0).*
 
 And initialize Slack (or wherever we want to get our real time data from):
 
-{% highlight js %}
+~~~js
 var slack = new Slack(SLACK_TOKEN, AUTO_RECCONECT, AUTO_MARK);
 slack.on('open', () => {
   console.log(`Connected to ${slack.team.name} as @${slack.self.name}`);
@@ -103,14 +103,14 @@ slack.on('error', e => {
   console.error(e);
 });
 slack.login();
-{% endhighlight %}
+~~~
 
 We now need to stream our data to Watson and then set the blink(1)'s color based
 on the response. That's what is happening in `slack.on('message', ...)`, it
 passes the real time Slack text to our `textToColor(text)` method (where the
 magic happens):
 
-{% highlight js %}
+~~~js
 // go off to Watson with some text and then set blink(1)s color based on the response
 function textToColor(text) {
   toneAsync(text).then(({children: [
@@ -134,7 +134,7 @@ function textToColor(text) {
     return blink.fadeToRGBAsync(FADE_TIME, r, g, b);
   }).catch(e => console.error(e));
 }
-{% endhighlight %}
+~~~
 
 As you can see by my uncertainty in the comments, figuring out how to map
 Watson's response to RGB values proved to be rather... difficult. With this
@@ -154,7 +154,7 @@ By the way, the `toneAsync` method is just a wrapper around the `toneAnalyzer`
 methods from the `watson-developer-cloud` [module on
 npm](https://www.npmjs.com/package/watson-developer-cloud):
 
-{% highlight js %}
+~~~js
 import Promise from 'bluebird';
 import watson  from 'watson-developer-cloud';
 
@@ -177,7 +177,7 @@ export default text => new Promise((resolve, reject) => {
     }
   })
 });
-{% endhighlight %}
+~~~
 
 I defined this in a separate file just to keep my main file cleaner... but that
 isn't necessary.
@@ -199,7 +199,7 @@ For example, in the code above I made use of `fadeToRGBAsync` instead of the
 blink1](https://www.npmjs.com/package/node-blink1). These could be chained like
 this:
 
-{% highlight js %}
+~~~js
 blink.fadeToRGBAsync(FADE_TIME, r1, g1, b1).then(() =>
   blink.fadeToRGBAsync(FADE_TIME, r2, g2, b2)
 ).then(() =>
@@ -209,14 +209,14 @@ blink.fadeToRGBAsync(FADE_TIME, r1, g1, b1).then(() =>
 ).then(() =>
   blink.fadeToRGBAsync(FADE_TIME, r5, g5, b5)
 ).catch(console.error);
-{% endhighlight %}
+~~~
 
 To run the app, you have to use babel (or perhaps Node v4 but I haven't tried
 that yet):
 
-{% highlight bash %}
+~~~bash
 babel-node app.js
-{% endhighlight %}
+~~~
 
 And again, the codebase can be found [here on
 github](https://github.com/kauffecup/blink1-sentiment), if you want to run this

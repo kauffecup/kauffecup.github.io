@@ -51,14 +51,14 @@ First we need to define a `manifest.yml` file in the root directory (and delete
 the generated `procfile`). The contents of the manifest at the bare minimum
 should look like:
 
-{% highlight yaml %}
+~~~yaml
 applications:
 - buildpack: https://github.com/jthomas/nodejs-v4-buildpack.git
   command: ./bin/hubot --adapter slack
   path: .
   instances: 1
   memory: 256M
-{% endhighlight %}
+~~~
 
 In this example, we're using the slack adapter (as shown by the start command).
 Of course, the start command can be whatever you need to start your specific
@@ -70,18 +70,18 @@ docs](https://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html).
 
 You then need to connect your hubot project to Bluemix:
 
-{% highlight bash %}
+~~~bash
 $ cd your_hubot_project
 $ cf api https://api.ng.bluemix.net
 $ cf login
-{% endhighlight %}
+~~~
 
 This will prompt you with your login credentials. Then to deploy your hubot, all
 you need to do is:
 
-{% highlight bash %}
+~~~bash
 $ cf push NAME_OF_YOUR_HUBOT_APP
-{% endhighlight %}
+~~~
 
 Note: if you do not specify a `name` and `host` in your manifest, you will have
 needed to create a `Node.js` Cloudfoundry app in the Bluemix dashboard. You then
@@ -96,9 +96,9 @@ sure it runs properly. You can either do it through the GUI (under your app's
 dashboard) or you can use the command line, as follows (example is showing slack
 as an adapter):
 
-{% highlight bash %}
+~~~bash
 $ cf set-env NAME_OF_YOUR_HUBOT_APP HUBOT_SLACK_TOKEN TOKEN_VALUE
-{% endhighlight %}
+~~~
 
 ## Shameless plug
 

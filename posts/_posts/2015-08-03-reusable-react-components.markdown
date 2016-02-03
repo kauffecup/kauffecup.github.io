@@ -48,7 +48,7 @@ I'm glad you asked.
 
 If the `MessageList` was defined as such:
 
-{% highlight js %}
+~~~js
 import React        from 'react';
 import MessageRow   from './MessageRow';
 import messageStore from '../store/messageStore';
@@ -70,7 +70,7 @@ export class MessageList extends React.Component {
     return <ul className='messageList'>{messages}</ul>;
   }
 };
-{% endhighlight %}
+~~~
 
 Then we wouldn't be able to just drop it in another application (unless that
 application had a file called `messageStore` that was a sibling of this file,
@@ -79,7 +79,7 @@ with an `onUpdate` method - all of which would insane requirements to have).
  Instead, we should define messages only as a `prop`, and write our
 `MessageList` as this:
 
-{% highlight js %}
+~~~js
 import React       from 'react';
 import MessageRow  from './MessageRow';
 
@@ -91,11 +91,11 @@ export class MessageList extends React.Component {
     return <ul className='messageList'>{messages}</ul>;
   }
 };
-{% endhighlight %}
+~~~
 
 In a small application, we can now plop this in to our main component:
 
-{% highlight js %}
+~~~js
 import React         from 'react';
 import Actions       from './Actions';
 // stores
@@ -151,12 +151,12 @@ class MyApp extends React.Component {
 };
 
 React.render(<MyApp />, document.body);
-{% endhighlight %}
+~~~
 
  In a large application, we should define a wrapper top-level functional area
 component that would look like:
 
-{% highlight js %}
+~~~js
 import React        from 'react';
 import MessageRow   from './MessageRow';
 import messageStore from '../store/messageStore';
@@ -175,7 +175,7 @@ export class MessagesView extends React.Component {
     return <MessageList messages={this.state.messages} />;
   }
 };
-{% endhighlight %}
+~~~
 
  While this might seem like a piece of extraneous work, it splits up the state
 management from the rendering, allowing us to re-use this `MessageList` in any

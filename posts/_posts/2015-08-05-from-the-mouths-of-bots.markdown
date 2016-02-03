@@ -213,7 +213,7 @@ comment and to have those comments always be up to date.
 
 To circumvent this, I have the following function:
 
-{% highlight js %}
+~~~js
 function loadCommentsForever (flag) {
   if (flag) {
     return commentScraper.getAndUploadComments()
@@ -223,7 +223,7 @@ function loadCommentsForever (flag) {
       .finally(loadCommentsForever.bind(this, !flag));
   }
 }
-{% endhighlight %}
+~~~
 
  `getAndUploadComments()` uses the `/comments` API to get the most recent ~1000
 comments one "page" at a time, and `getAndUploadPostComments()` gets the most
@@ -237,7 +237,7 @@ and up to date.
 
 Using the personality insights was much simpler than expected. To initialize:
 
-{% highlight js %}
+~~~js
 var watson = require('watson-developer-cloud');
 var personalityInsights = watson.personality_insights(credentials);
 
@@ -248,7 +248,7 @@ personalityInsights.profile({text: aggregatedTextObj.value.body}, function (err,
     // handle error
   }
 });
-{% endhighlight %}
+~~~
 
 ###cloudant
 
@@ -257,7 +257,7 @@ super-awesome-ly-easy. All I had to do was set up a very simple map/reduce.
 
 Map:
 
-{% highlight js %}
+~~~js
 function (doc) {
   if (doc.author && doc.author !== '[deleted]') {
     emit(doc.author, {
@@ -266,11 +266,11 @@ function (doc) {
     });  
   }
 }
-{% endhighlight %}
+~~~
 
 Reduce:
 
-{% highlight js %}
+~~~js
 function (keys, values, rereduce) {
   return values.reduce(function (prev, curr) {
     return {
@@ -282,14 +282,14 @@ function (keys, values, rereduce) {
     score: 0
   });
 }
-{% endhighlight %}
+~~~
 
 This created a view that stored the aggregate words from a given bot, and that
 bot's total score.
 
 To access this, all I had to do was:
 
-{% highlight js %}
+~~~js
 var Promise = require('bluebird');
 var cloudant = require('cloudant')(dbCredentials.url);
 var commentsDB = Promise.promisifyAll(cloudant.use(dbCredentials.dbName));
@@ -301,7 +301,7 @@ commentsDB.viewAsync('ss_design', 'aggregate_text', {reduce: true, group: true, 
   authors = authors.filter(function (r) {return r.value.body.split(' ').length > 1200 });
   // more stuff
 });
-{% endhighlight %}
+~~~
 
 ##anything else?
 

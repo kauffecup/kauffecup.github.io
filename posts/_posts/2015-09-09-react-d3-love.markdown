@@ -43,7 +43,7 @@ updates are described declaratively.
 
 This means the structure of the React component itself needs to look like:
 
-{% highlight js %}
+~~~js
 import ReactBubbleChartD3 from './ReactBubbleChartD3';
 import React              from 'react';
 
@@ -81,7 +81,7 @@ class ReactBubbleChart extends React.Component {
 }
 
 export default ReactBubbleChart;
-{% endhighlight %}
+~~~
 
 Pretty simple so far - when our React component is mounted we create our D3
 component, when our React component updates we update our D3 component, when
@@ -91,7 +91,7 @@ both stateless with access to one "universal truth."
 
 The skeleton of our D3 component looks like:
 
-{% highlight js %}
+~~~js
 import d3 from 'd3';
 var ReactBubbleChartD3 = {};
 var svg, html, bubble;
@@ -142,7 +142,7 @@ ReactBubbleChartD3.update = function (el, props) {
 ReactBubbleChartD3.destroy = function (el) {}
 
 export default ReactBubbleChartD3;
-{% endhighlight %}
+~~~
 
  Again, the full code can be found
 [here](https://github.com/kauffecup/react-bubble-chart).
@@ -200,7 +200,7 @@ The key for me was to make sure that my reference to the `svg` node and `html`
 node were the same ones initialized in the `create()` method. Once these were
 the same doing `svg.selectAll('circle')...` worked as expected.  In context:
 
-{% highlight js %}
+~~~js
   // define a color scale for our bubble chart
   var color = d3.scale.quantize()
     .domain([
@@ -218,7 +218,7 @@ the same doing `svg.selectAll('circle')...` worked as expected.  In context:
     .data(nodes, (d) => 'g' + d._id);
   var labels = html.selectAll('.bubble-label')
     .data(nodes, (d) => 'g' + d._id);
-{% endhighlight %}
+~~~
 
  So there's a few things going on here. We initialize our color scale
 (`colorRange` is passed in) and allow it to be a fixedDomain or determined by
@@ -234,7 +234,7 @@ places, which ones are entering, and which ones are leaving.
 
 Once we have the correct references to the correct nodes with the correct `_id` values, the rest is a piece of cake... ish.
 
-{% highlight js %}
+~~~js
   // for circles we transition their transform, r, and fill
   circles.transition()
     .duration(duration)
@@ -253,7 +253,7 @@ Once we have the correct references to the correct nodes with the correct `_id` 
     .style('top', d =>  d.y - d.r + 'px')
     .style('opacity', 1)
     .style('color', d => d.selected ? selectedTextColor : '');
-{% endhighlight %}
+~~~
 
 This code reads pretty much 1:1 with what's actually going on. The bubble layout
 method appends an `x`, `y`, and `r` property on to our data set, allowing us to
@@ -270,7 +270,7 @@ section. For each node we append both a `<circle>` under the `<svg>` block and a
 the correct spot and styles to position the divs in the correct spot. There's
 also some fancy transition stuff going on here... just to make it look cooler.
 
-{% highlight js %}
+~~~js
   // enter - only applies to incoming elements (once emptying data)
   if (data.length) {
     // initialize new circles
@@ -299,7 +299,7 @@ also some fancy transition stuff going on here... just to make it look cooler.
       .duration(duration * 1.2)
       .style('opacity', 1);
   }
-{% endhighlight %}
+~~~
 
 ### Handle exiting nodes
 
@@ -307,7 +307,7 @@ This could be as simple as just calling `.remove()` but we're too fancy for
 that, aren't we? Let's animate them going out so that our circles don't just
 disappear:
 
-{% highlight js %}
+~~~js
   // exit - only applies to... exiting elements
   // for circles have them shrink to 0 as they're flying all over
   circles.exit()
@@ -342,7 +342,7 @@ disappear:
     .style('width', 0)
     .style('height', 0)
     .remove();
-{% endhighlight %}
+~~~
 
 ## and in the end...
 
