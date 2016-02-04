@@ -4,6 +4,7 @@ title: "Dismantling the Monolith"
 location: "NodeJS Boston"
 locationURL: ""
 tags: [node, microservices]
+locationURL: "http://www.meetup.com/Node-JS-Boston/events/228609581/"
 abstract: >
   Microservices seem to be all that anyone is talking about these days; long
   gone is the monolithic app. The idea is simple - take one large app and break
