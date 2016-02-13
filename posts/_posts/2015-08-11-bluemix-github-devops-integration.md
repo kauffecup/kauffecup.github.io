@@ -30,7 +30,7 @@ Prerequisites:
   1. Create a Bluemix Project
   1. Push that project's code to a Github Repo
 
-##Part 1: Configure your Devops project.
+## Part 1: Configure your Devops project.
 
 Navigate on over to [IBM Devops](https://hub.jazz.net/), and click "Create
 Project"
@@ -66,7 +66,7 @@ GitHub repo:
 
 ![webhook](/assets/images/post-images/bluemix-github-pipeline/06_webhook.png)
 
-##Part 2: Configure your build pipeline.
+## Part 2: Configure your build pipeline.
 
 Full docs [here](https://hub.jazz.net/docs/deploy/).
 
@@ -115,7 +115,7 @@ And then create a deploy job in our deploy stage.
 
 For both of these, I've always found the defaults to be sufficient.
 
-##Part 3: Relax.
+## Part 3: Relax.
 
 Now every time you push to your GitHub repo, your pipeline will run.
 

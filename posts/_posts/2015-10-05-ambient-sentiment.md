@@ -50,9 +50,9 @@ one from
 Watson](https://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/speech-to-text.html)),
 that could get pretty interesting too.
 
-##let's dive into the code, shall we?
+## let's dive into the code, shall we?
 
-####(of course it's a node app)
+#### (of course it's a node app)
 
 First we have all of our imports:
 
@@ -182,7 +182,7 @@ export default text => new Promise((resolve, reject) => {
 I defined this in a separate file just to keep my main file cleaner... but that
 isn't necessary.
 
-##a few notes
+## a few notes
 
 To run the code yourself, you'll need an [IBM Bluemix](https://bluemix.net) and
 the [Tone

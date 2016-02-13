@@ -18,11 +18,11 @@ building future UI. This allows for cross team collaboration, increases
 maintainability, speeds up development time, eliminates bugs, and reduces the
 file-size of your application.
 
-##Top-Level Functional Area Components
+## Top-Level Functional Area Components
 
 Only **top-level functional area components** should hold state.
 
-###What does this mean?
+### What does this mean?
 
 Let's say, for example, you were building an email application. This app has a
 message list, a message read area, and a calendar area. The message list
@@ -35,14 +35,14 @@ meaning that all three of the functional area components will hold state. In
 smaller applications, it's best to have the main top level component manage all
 of the state, meaning that only one component will hold state.
 
-###What do you mean by application state?
+### What do you mean by application state?
 
 In this example, the application state would be the messages, the message
 content (the selected message), and the calendar entries. In addition to
 application state, you can have UI-level state such as whether a menu is open or
 closed.
 
-###How would we re-use the MessageList in different applications with different sources?
+### How would we re-use the MessageList in different applications with different sources?
 
 I'm glad you asked.
 
@@ -153,7 +153,7 @@ class MyApp extends React.Component {
 React.render(<MyApp />, document.body);
 ~~~
 
- In a large application, we should define a wrapper top-level functional area
+In a large application, we should define a wrapper top-level functional area
 component that would look like:
 
 ~~~js

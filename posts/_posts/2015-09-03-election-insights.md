@@ -44,7 +44,7 @@ second the graph changed dramatically. Focusing on the election not only made
 the data understandable and much less volatile, but allows us to interpolate it
 in meaningful ways.
 
-##the results are in
+## the results are in
 
 The scope of what Alchemy News parses makes the data feel truly representative
 of the collective sentiment around a given entity. They parse everything from
@@ -68,7 +68,7 @@ collected the net-sentiment around Trump was positive.
 It would be crazy to say that data like this could predict the outcome of the
 election, but hey... wanna bet?
 
-##getting the data
+## getting the data
 
 The query to Alchemy looks like:
 
@@ -115,7 +115,7 @@ Note that each entity ties back to an article - the sentiment is how *that
 article* "feels" about this entity, and the count is how many times that article
 mentions this entity.
 
-##using the data
+## using the data
 
 The main technical challenge arose from parsing and retrieving the data. I
 wanted the date ranges to be dynamic, and I wanted adjusting the date range to
