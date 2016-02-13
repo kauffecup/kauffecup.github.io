@@ -182,7 +182,7 @@ componentDidMount() {
 }
 ~~~
 
-Calling `getMyInfo` set's the user info in our application state via a dispatch.
+Calling `getMyInfo` sets the user info in our application state via a dispatch.
 The method is defined as (from our [`actions.js` file][acs]):
 
 ~~~js
@@ -200,7 +200,7 @@ export function getMyInfo() {
 }
 ~~~
 
-And our [`reducer`][rdr] handle's the data via:
+And our [`reducer`][rdr] handles the data via:
 
 ~~~js
 // set our loading property when the loading begins
