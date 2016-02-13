@@ -32,7 +32,7 @@ on [GitHub](https://github.com/github/hubot-scripts).
 
 ## Fun things to do with Hubot
 
-![picture time](http://i.imgur.com/rXccRiS.png)
+![picture time](/assets/images/post-images/hubot.png)
 
 ## Let's get down to business
 

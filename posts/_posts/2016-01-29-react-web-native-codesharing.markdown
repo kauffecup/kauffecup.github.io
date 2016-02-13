@@ -3,7 +3,7 @@ layout: post
 title:  "Sharing Code between React Web and Native Apps"
 date:   2016-01-29 10:35:44 -0500
 tags: [react, react-native]
-image: assets/images/post-images/react-web-native-header.jpg
+image: assets/images/post-images/react-web-native-codesharing/header.jpg
 description: >
  How to share application logic between a React Web app and a React native app,
  while keeping the individual component rendering unique to each platform.
@@ -17,7 +17,7 @@ each platform. The example app can be found [on GitHub][gh].*
 
 React Native                              |  React Web
 :----------------------------------------:|:-------------------------------------:
-![native](http://i.imgur.com/OvstUk4.gif) | ![web](http://i.imgur.com/siF0aYJ.gif)
+![native](/assets/images/post-images/react-web-native-codesharing/mobile.gif) | ![web](/assets/images/post-images/react-web-native-codesharing/web.gif)
 
 The app itself is a very simple Hello World (ish) app. Not only does it show
 "Hello World"... but when you click (or tap) it... it changes from red to blue!

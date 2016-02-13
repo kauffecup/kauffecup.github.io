@@ -35,36 +35,36 @@ Prerequisites:
 Navigate on over to [IBM Devops](https://hub.jazz.net/), and click "Create
 Project"
 
-![create](http://i.imgur.com/zC1yUXo.png)
+![create](/assets/images/post-images/bluemix-github-pipeline/01_create.png)
 
 Name your project and click on "link to an existing GitHub repository." By
 convention, I prefer to name my IBM Devops project the same name as my Bluemix
 project.
 
-![link](http://i.imgur.com/YKawNQH.png)
+![link](/assets/images/post-images/bluemix-github-pipeline/02_link.png)
 
 Select the repo that contains the code for your project.
 
-![select](http://i.imgur.com/sO78u6W.png)
+![select](/assets/images/post-images/bluemix-github-pipeline/03_select.png)
 
 Now it's project configuration time. For the purposes of this demo, we're going
 to make it private and without scrum development tools.
 
 **Make sure to select "Make this a Bluemix Project,"** otherwise you won't be
-**able to push the updates. Select the proper organization and space that houses
-**your application.
+able to push the updates. Select the proper organization and space that houses
+your application.
 
-![config](http://i.imgur.com/on8UF7Y.png)
+![config](/assets/images/post-images/bluemix-github-pipeline/04_config.png)
 
 You should see a success notification. To get to the build pipeline view for
 "Part 2," click the "build & deploy button.
 
-![success](http://i.imgur.com/Eh6jwI6.png)
+![success](/assets/images/post-images/bluemix-github-pipeline/05_success.png)
 
 For a sanity check, you can verify that the following webhook was added to your
 GitHub repo:
 
-![webhook](http://i.imgur.com/3uV0w85.png)
+![webhook](/assets/images/post-images/bluemix-github-pipeline/06_webhook.png)
 
 ##Part 2: Configure your build pipeline.
 
@@ -76,22 +76,22 @@ and build. The deploy stage will only have one job - deploy.
 
 Let's start by creating a stage - click "Add Stage."
 
-![create stage](http://i.imgur.com/9g8W2T9.png)
+![create stage](/assets/images/post-images/bluemix-github-pipeline/07_create_stage.png)
 
 Name this stage "Test + Build." Make sure that "Run jobs whenever a change is
 pushed to Git" is selected.
 
-![new stage](http://i.imgur.com/nF9ScYM.png)
+![new stage](/assets/images/post-images/bluemix-github-pipeline/08_new_stage.png)
 
 We're going to add three "build" jobs:
 
-![new jobs](http://i.imgur.com/TpZFaZt.png)
+![new jobs](/assets/images/post-images/bluemix-github-pipeline/09_new_jobs.png)
 
 For the purposes of this demo, we're going to use npm for our "Builder Type." We
 also have our npm scripts configured such that `test` runs our tests, and
 `build` does our build.
 
-![builder type](http://i.imgur.com/ochjTuA.png)
+![builder type](/assets/images/post-images/bluemix-github-pipeline/10_builder_type.png)
 
 Stage 1, "Install Dependencies" uses as a build script:
 
@@ -107,11 +107,11 @@ Stage 3, "Build" uses as a build script:
 
 Now all we need to do is create our deploy stage (by clicking add stage again):
 
-![new deploy](http://i.imgur.com/QL7rtuB.png)
+![new deploy](/assets/images/post-images/bluemix-github-pipeline/11_new_deploy.png)
 
 And then create a deploy job in our deploy stage.
 
-![new deploy job](http://i.imgur.com/klUXbHp.png)
+![new deploy job](/assets/images/post-images/bluemix-github-pipeline/12_new_deploy_job.png)
 
 For both of these, I've always found the defaults to be sufficient.
 
@@ -119,4 +119,4 @@ For both of these, I've always found the defaults to be sufficient.
 
 Now every time you push to your GitHub repo, your pipeline will run.
 
-![voila](http://i.imgur.com/znHuxvy.png)
+![voila](/assets/images/post-images/bluemix-github-pipeline/13_voila.png)

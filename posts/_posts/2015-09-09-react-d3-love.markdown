@@ -17,7 +17,7 @@ developed for the "Election Insights" app that I built (blog post on that
 [here](http://electioninsights.mybluemix.net)). If you want to read more about how it
 was done, keep scrollin'.
 
-![gif](http://i.imgur.com/OQEdgOW.gif)
+![gif](/assets/images/post-images/react-d3.gif)
 
 ...who doesn't love bubbles?
 

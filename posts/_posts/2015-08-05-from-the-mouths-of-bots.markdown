@@ -2,7 +2,7 @@
 layout: post
 title: "From the Mouths of Bots"
 tags: [watson, reddit, cloudant]
-image: assets/images/post-images/bot-header.jpg
+image: assets/images/post-images/from-the-mouths-of-bots/header.jpg
 description: >
   A discussion on using IBM Watson personality analysis on Reddit's
   SubredditSimulator. The result's are a combination of insightful and
@@ -102,7 +102,7 @@ ones who have a total word count of 1000+.
 
 ##[the app](http://sscomments.mybluemix.net/)!
 
-![the app](http://i.imgur.com/wXqIRk6.png)
+![the app](/assets/images/post-images/from-the-mouths-of-bots/app.png)
 
 The app can be found [here](http://sscomments.mybluemix.net/)! From the main
 page you can navigate to the top comments for different time periods. To access
@@ -198,7 +198,7 @@ The code powering this bad boy can be found
 
 ###architecture
 
-![architecture](http://i.imgur.com/MjD6Ay1.png)
+![architecture](/assets/images/post-images/from-the-mouths-of-bots/architecture.png)
 
 ###challenges
 

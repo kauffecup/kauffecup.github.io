@@ -2,7 +2,7 @@
 layout: post
 title: "Ambient Sentiment"
 tags: [watson, slack]
-image: assets/images/post-images/ambient-sentiment-header.jpg
+image: assets/images/post-images/ambient-sentiment/header.jpg
 description: >
   A fun little example combining a blink(1) with IBM Watson and Slack to
   visualize the sentiment of incoming messages in real time.
@@ -21,15 +21,15 @@ github](https://github.com/kauffecup/blink1-sentiment).*
 
 Whenever someone messages something angry, the blink(1) turns red:
 
-![angry](http://i.imgur.com/yrh35mW.jpg?2)
+![angry](/assets/images/post-images/ambient-sentiment/angry.jpg)
 
 ...or when they say something happy it turns yellow:
 
-![happy](http://i.imgur.com/GyKmxpg.jpg?2)
+![happy](/assets/images/post-images/ambient-sentiment/happy.jpg)
 
 ...or when they say something sad it turns blue:
 
-![sad](http://i.imgur.com/ocKp48j.jpg?2)
+![sad](/assets/images/post-images/ambient-sentiment/sad.jpg)
 
 ...and all shades in between.
 

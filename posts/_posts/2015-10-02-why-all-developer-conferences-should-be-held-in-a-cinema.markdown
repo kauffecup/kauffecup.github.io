@@ -2,6 +2,7 @@
 layout: post
 title: "Why All Developer Conferences Should Be Held in a Cinema"
 tags: [conferences]
+image: assets/images/post-images/developer-conferences-cinema/header.jpg
 description: >
   The best AV in town, comfy stadium seating, and popcorn. Need I say more?
 ---
@@ -13,7 +14,7 @@ Thomas](https://twitter.com/thomasj), and [Tristan
 Reckhaus](https://twitter.com/trecks), advocating [IBM
 Bluemix](https://bluemix.net).
 
-![Outside the Conference](http://i.imgur.com/qCefViN.jpg)
+![Outside the Conference](/assets/images/post-images/developer-conferences-cinema/outside.jpg)
 
 The main issues I've experienced in conferences always center around audiovisual
 equipment. Who hasn't seen someone fumbling with a projector or a mic for the
@@ -22,7 +23,7 @@ first few seconds/minutes while beginning a talk?
 Movie theaters have arguably the best audiovisual equipment around; I mean...
 just check out how huge this screen is:
 
-![Huge screens](http://i.imgur.com/S8I7YWJ.jpg?1)
+![Huge screens](/assets/images/post-images/developer-conferences-cinema/screens.jpg)
 
 I've never had an easier time reading slides, or understanding projected code.
 
@@ -32,7 +33,7 @@ everything.
 Not only not only that, but the sheer darkness of each theater discouraged
 people from distractedly using their phones and laptops.
 
-![By the booths](http://i.imgur.com/cKRLBkA.jpg?1)
+![By the booths](/assets/images/post-images/developer-conferences-cinema/booths.jpg)
 
 Plus, the unlimited nachos and popcorn were pretty cool.
 

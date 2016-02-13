@@ -2,7 +2,7 @@
 layout: post
 title: "Election Insights"
 tags: [watson, alchemy, mongodb]
-image: assets/images/post-images/election-header.jpg
+image: assets/images/post-images/election-insights/header.jpg
 description: >
   The 'how' and 'why' between building an app that analyzes and visualizes news
   about the election in real time. It uses React + D3 for the visualization.
@@ -21,7 +21,7 @@ you're looking at.
 *Note that [the app](http://electioninsights.mybluemix.net/) runs much better on
 desktop than it does on mobile*
 
-![app photo](http://i.imgur.com/SqKHnBC.png)
+![app photo](/assets/images/post-images/election-insights/app.png)
 
 This was all built on [IBM Bluemix](https://bluemix.net).
 
@@ -169,7 +169,7 @@ only query Alchemy directly every 15m and use those results to populate my Mongo
 database, and then have the application itself interact with Node which is
 interacting with the database. Here's a picture:
 
-![flow chart](http://i.imgur.com/mzQKEHz.png)
+![flow chart](/assets/images/post-images/election-insights/architecture.png)
 
 The only services needed to deploy this in Bluemix are Alchemy and Mongo Labs.
 For more info on setting this up and playing with it either locally or on
