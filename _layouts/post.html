@@ -13,9 +13,8 @@ layout: default
         <span>at <a href="{{page.locationURL}}">{{ page.location }}</a></span>
       {% endif %}
       <div class="post-tags">
-        Tags:
         {% for tag in page.tags %}
-          <a href="/archives/#{{tag|slugize}}">{{tag}}</a>{% unless forloop.last %},{% endunless %}
+          <a href="/archives/#{{tag|slugize}}">#{{tag}}</a>{% unless forloop.last %},{% endunless %}
         {% endfor %}
       </div>
     </div>
