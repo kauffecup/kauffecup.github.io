@@ -22,5 +22,7 @@ layout: default
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
-  {% include disqus.html %}
+  {% if site.environment == "production" %}
+    {% include disqus.html %}
+  {% endif %}
 </article>
