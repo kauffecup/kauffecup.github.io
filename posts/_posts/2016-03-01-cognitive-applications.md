@@ -9,10 +9,9 @@ description: >
 ---
 
 The more I interact with "smart apps" (and people talking about their own
-"smart apps") that are "based on machine learning," the
-more I hear the word "cognitive" being thrown around. But what actually does
-this imply? What is a cognitive application? Can I make my app smarter? Can I
-make my app *cognitive*?
+"smart apps") that are "based on machine learning," the more I hear the word
+"cognitive" being thrown around. But what actually does this imply? What is a
+cognitive application? Can I make my app smarter? Can I make my app *cognitive*?
 
 There's really no better starting point than this blunt quote from
 [Wikipedia][wkp]:
@@ -28,7 +27,7 @@ about more complex — and meaningful — bodies of data.
 
 ### but what does any of this actually mean?
 
-When dealing with buzzwords, it's important to separate the bullsh*t from the
+When dealing with buzzwords, it's important to filter out the bullsh*t from the
 content.
 
 An app is truly "cognitive" when it learns and reasons from and with the user,
@@ -39,8 +38,8 @@ algorithm, it isn't considered "cognitive."
 ### ok, I'm still confused by all of the buzzwords being thrown around.
 
 I've always found it best to walk through an example, no matter how hypothetical
-it may be. The quintessential cognitive example is typically some kind of
-personal assistant, but that's boring so let's pick something else.
+it may be. The quintessential cognitive example is some kind of personal
+assistant, but that's boring so let's pick something else.
 
 Let's pick something crazy exciting... like shopping? But seriously, *shopping*.
 The *most* exciting.
