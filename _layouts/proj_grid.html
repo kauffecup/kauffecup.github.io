@@ -3,7 +3,6 @@ layout: default
 ---
 <div style="width:800px; margin: auto;">
   {{ content }}
-    <p>conectfsad</p>
   
     {% assign i=0 %}
     <div align="center">
@@ -11,7 +10,7 @@ layout: default
       {% include project-item.html url=post.url title=post.title icon=post.icon %}
       
       {%assign i = i | plus: 1%}
-      {% if i == 2%}
+      {% if i == 3  %}
       <br>
       {% assign i=0 %}
       {%endif%}
