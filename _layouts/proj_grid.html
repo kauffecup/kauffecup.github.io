@@ -1,19 +1,21 @@
 ---
 layout: default
 ---
-<div class="home">
+<div style="width:800px; margin: auto;">
   {{ content }}
-  <ul class="list-of-things">
+    <p>conectfsad</p>
+  
     {% assign i=0 %}
+    <div align="center">
     {% for post in site.categories[{{page.category}}] %}
       {% include project-item.html url=post.url title=post.title icon=post.icon %}
       
       {%assign i = i | plus: 1%}
-      {% if i == 3%}
+      {% if i == 2%}
       <br>
       {% assign i=0 %}
       {%endif%}
-      {% if forloop.last %}</ul>{% endif %}
+      
     {% endfor %}
-  </ul>
+  </div>
 </div>
