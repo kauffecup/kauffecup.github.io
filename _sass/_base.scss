@@ -179,6 +179,18 @@ pre {
   }
 }
 
+.floated_img {
+    display: inline-block;
+    height: 100px;
+    background: #ccc;
+    margin: 5px;
+}
+
+.proj_row{
+    
+    text-align: center;
+}
+
 /** Clearfix */
 %clearfix {
   &:after {
