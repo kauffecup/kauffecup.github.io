@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<div class="home">
+  {{ content }}
+  <ul class="list-of-things">
+    {% assign i=0 %}
+    {% for post in site.categories[{{page.category}}] %}
+      {% include project-item.html url=post.url title=post.title icon=post.icon %}
+      
+      {%assign i = i | plus: 1%}
+      {% if i == 3%}
+      <br>
+      {% assign i=0 %}
+      {%endif%}
+      {% if forloop.last %}</ul>{% endif %}
+    {% endfor %}
+  </ul>
+</div>
