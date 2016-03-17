@@ -3,7 +3,7 @@ layout: post
 title: "Sample Project"
 tags: myWork
 image: assets/images/Dock.jpg
-icon: https://pbs.twimg.com/profile_images/656422617084067840/dRxNB0LR.jpg
+icon: assets/images/project-images/nature_icon.jpg
 description: >
   the only perscription is...
 ---

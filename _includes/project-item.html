@@ -1,7 +1,9 @@
 
-  <a href="{{ include.url | prepend: site.baseurl }}">
-         <div class="floated_img">   
-                    <img  id="img1"  src="{{include.icon}}" height="200">
+  
+         <div class="floated_img"   >   
+             <a href="{{ include.url | prepend: site.baseurl }}">
+                    <img  id="img1"  src="{{site.baseurl}}/{{include.icon}}"  height="200px"  alt="Image"/>
                     <p>{{include.title}}</p>
+             </a>
             </div>
-  </a>
+
