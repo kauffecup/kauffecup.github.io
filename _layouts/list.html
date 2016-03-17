@@ -12,7 +12,12 @@ layout: default
         <ul>
         {% assign date = currentdate %}
       {% endif %}
-      {% include list-item.html url=post.url title=post.title date=post.date %}
+      {% if post.forceurl %}
+        {% assign url = post.forceurl %}
+      {% else %}
+        {% assign url = post.url %}
+      {% endif %}
+      {% include list-item.html url=url title=post.title date=post.date %}
       {% if forloop.last %}</ul>{% endif %}
     {% endfor %}
   </ul>
