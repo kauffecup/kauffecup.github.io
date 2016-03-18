@@ -13,7 +13,12 @@ hide: true
   {% include slug.html name=tag_name %}
   <ul>
     {% for post in site.tags[tag_name] %}
-      {% include list-item.html url=post.url title=post.title date=post.date %}
+      {% if post.forceurl %}
+        {% assign url = post.forceurl %}
+      {% else %}
+        {% assign url = post.url %}
+      {% endif %}
+      {% include list-item.html url=url title=post.title date=post.date %}
     {% endfor %}
   </ul>
 {% endfor %}
