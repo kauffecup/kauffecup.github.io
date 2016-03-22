@@ -17,5 +17,6 @@ sitting and standing audience.
 
 Here's a [related blog post](/cognitive-applications) I wrote on the same topic.
 
-There will also be a 5ish minute video/interview filmed after the meetup that
-I'll post here (when available).
+This is the 7m interview that was filmed after the meetup:
+
+<iframe width="560" height="315" style="margin:0 auto;display:block" src="https://www.youtube.com/embed/A_hptcfI9Jo?list=PL055Epbe6d5bQubu5EWf_kUNA3ef_qbmL" frameborder="0" allowfullscreen></iframe>
