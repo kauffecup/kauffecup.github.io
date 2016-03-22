@@ -2,7 +2,7 @@
 layout: post
 title: "StopMotion Films"
 tags: myWork
-image: assets/images/project-images/stopmotionscene.jpg
+image: assets/images/project-images/stopmotion_scene.jpg
 icon: assets/images/project-images/cards_icon.jpg
 description: >
   the only perscription is...
