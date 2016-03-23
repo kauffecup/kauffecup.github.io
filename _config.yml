@@ -12,7 +12,7 @@ instagram_username:
 linkedin_url: https://www.linkedin.com/in/sam-woolf-b5914b32
 
 # site Settings
-url: "http://jkaufman.io" # the base hostname & protocol for your site
+url: "http://woolfsam.com" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog
 
 # build settings
@@ -32,7 +32,7 @@ gems:
 
 # prose.io configuration
 prose:
-  siteurl: "http://jkaufman.io/"
+  siteurl: "http://woolfsam.com/"
   relativeLinks: "http://prose.github.io/starter/links.jsonp"
   media: "assets/images"
   metadata:
