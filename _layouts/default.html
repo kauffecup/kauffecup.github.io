@@ -4,8 +4,8 @@
   {% if site.environment == "production" %}
     {% include google-analytics.html %}
   {% endif %}
-  <body class="{% if page.format %}{{page.format}}{% endif %}">
-    {% include header.html %}
+  <body class="{% if page.format %}{{page.format}}{% endif %}"> 
+      {% include header.html %}
     <div class="wrapper">
       <div class="page-content">
         {{ content }}
