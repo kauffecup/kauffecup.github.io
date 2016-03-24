@@ -9,3 +9,15 @@ description: >
 I went for a hike with my brother in Memorial Park, a beautiful area nestled in California's coastal redwoods. We paused for a sip water, and proceeded to spend the next 10 minutes on our stomachs, as we stared eye to optic-tentacle with a banana slug. 
 <br>
 <iframe width="853" height="480" src="https://www.youtube.com/embed/0nUtMcK84bQ" frameborder="0" allowfullscreen></iframe>
+<br><br>
+Update: Here is a note I recieved from my father. Apparently I have a long standing fascination with these yellow creatures. 
+<br><br>
+<i>hi sam-
+<br><br>
+when you were approx 2 1/2 we went hiking
+in Woodside-Wunderilich in redwoods in the rainy season. On an uphill slope, 
+ferns and fallen needles, we pointed out to you a glistening yellow banana slug.
+you scrambled unsteadily over to it, paused, then raised your foot high and
+squashed it.
+<br><br>
+dad</i>
