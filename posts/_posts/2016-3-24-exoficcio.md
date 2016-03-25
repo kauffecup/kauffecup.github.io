@@ -22,4 +22,5 @@ They laughed, and, surprisingly, obliged. With the faint tempting carrot of free
 
 We secured our own spread in ExOfficio’s Summer 2015 catalog (<a href="http://www.exofficio.com/catalog/summer-2015" target="_blank">p6-7</a>). Not too shabby for a months work.
 
+
 ![ourspread](/assets/images/post-images/models/underwear.jpg)
