@@ -9,7 +9,7 @@ description: >
 ---
 <h4>Making Computer Programming More Accessible to Children</h4>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NA0iV72gVDg" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NA0iV72gVDg?rel=0" frameborder="0" allowfullscreen></iframe>
 <br>
 After spending a few semesters teaching engineering concepts in local elementary schools (with 
 <a href="http://sites.tufts.edu/stomp/">STOMP</a>
