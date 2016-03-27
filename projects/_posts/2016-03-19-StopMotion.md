@@ -17,3 +17,7 @@ I've always loved creating StopMotion films. Like Frankenstein, bringing inanima
 <br>
 <iframe src="https://player.vimeo.com/video/52548022" width="500" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/52548022">MyCreate Demo</a> from <a href="https://vimeo.com/huehd">HUE</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+Header photo &copy; Sam Woolf 2012<br>
+Icon photo &copy; bizjournals.com
+{: style="color:gray; font-size: 80%; text-align: left;"}

@@ -28,3 +28,7 @@ Below, you can find a few of our recent promotional videos and presentations. I 
 <br>
 <iframe width="640" height="360" src="https://www.youtube.com/embed/iahrkTyuIZw?rel=0" frameborder="0" allowfullscreen></iframe>
 
+<br>
+Header photo &copy; youtube.com/channel/UC-6To_77wWefsz7-7oO8rtQ <br>
+Icon Photo &copy; Sam Woolf 2013
+{: style="color:gray; font-size: 80%; text-align: left;"}

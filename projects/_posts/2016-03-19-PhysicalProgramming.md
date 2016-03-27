@@ -19,3 +19,7 @@ So, I spent a few months working on a research project with the Tufts’ Center 
 <br><br>
 The project was wildly successful. In the end, I built clean, working product that was highly intuitive. In usability tests, my product was easily and quickly mastered by the users who had never seen Sifteo Cubes, or Lego NXTs previously.<br><br>
 A neat article on the <a href="http://www.thenxtstep.com/2012/09/nxt-and-sifteo-cubes.html">project</a>. 
+
+Header Photo &copy; Sam Woolf 2012<br>
+Icon photo &copy; nerdtrek.com
+{: style="color:gray; font-size: 80%; text-align: left;"}

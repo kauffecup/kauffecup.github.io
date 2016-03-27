@@ -24,3 +24,8 @@ We secured our own spread in ExOfficio’s Summer 2015 catalog (<a href="http://
 
 
 ![ourspread](/assets/images/post-images/models/underwear.jpg)
+
+Header photo &copy; Sam Woolf 2015<br>
+Body photo &copy; Exofficio.com 
+{: style="color:gray; font-size: 80%; text-align: left;"}
+{: style="color:gray; font-size: 80%; text-align: left;"}

@@ -19,3 +19,6 @@ ferns and fallen needles, we pointed out to you a glistening yellow banana slug.
 you scrambled unsteadily over to it, paused, then raised your foot high and
 squashed it.
 <br>dad
+
+Header photo &copy; bikeforums.net<br>
+{: style="color:gray; font-size: 80%; text-align: left;"}
