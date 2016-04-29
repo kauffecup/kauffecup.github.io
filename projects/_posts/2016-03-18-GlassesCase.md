@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "GlassesCase"
+postorder: 2
 tags: myWork woodShop
 image: assets/images/project-images/tablesaw.jpg
 icon: assets/images/project-images/glasses_icon.jpg

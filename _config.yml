@@ -29,6 +29,8 @@ permalink: /:title/
 # automatically generate a sitemap
 gems:
   - jekyll-sitemap
+  
+excerpt_separator: "" 
 
 # prose.io configuration
 prose:

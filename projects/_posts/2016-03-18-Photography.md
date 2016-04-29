@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Photography"
+postorder: 2
 tags: myWork photography
 image: assets/images/project-images/PokraBoats.jpg
 icon: assets/images/project-images/photos_icon.jpg
