@@ -1,5 +1,6 @@
 ---
 layout: post
+postorder: 4
 title: "StopMotion Films"
 tags: myWork
 image: assets/images/project-images/stopmotion_scene.jpg
