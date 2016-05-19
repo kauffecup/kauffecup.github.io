@@ -2,7 +2,7 @@
 layout: post
 title: "Ambient Sentiment pt. 2"
 tags: watson
-image:
+image: assets/images/post-images/ambient-sentiment-2/header.jpg
 description: >
   Visualizing tone in real time with a bit of websockets fun throne in.
 ---
