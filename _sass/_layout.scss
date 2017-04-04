@@ -56,26 +56,6 @@
       margin-left: -1 * $site-nav-after-width / 2;
     }
   }
-
-  img {
-    width: 145px;
-    height: 145px;
-    margin-top: -73px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    background-color: #fff;
-    border: 3px solid #fff;
-    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-  }
-  .social-media-list {
-    justify-content: center;
-    margin-top: 10px;
-    li {
-      margin: 0 5px;
-    }
-  }
 }
 @include media-query($on-palm) {
   .site-header {

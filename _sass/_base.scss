@@ -65,7 +65,7 @@ li {
 h1, h2, h3, h4, h5, h6 {
   font-family: $title-font-family;
   font-weight: $title-font-weight;
-  margin: 0 0 0.5rem -0.1rem /* align left edge */;
+  margin: 0 0 0.5rem -0.1rem; /* align left edge */;
   text-rendering: optimizeLegibility;
   line-height: 1.2;
   color: $brand-color;
@@ -77,8 +77,6 @@ h1 {
 }
 @media (min-width: 30rem) {
   h1 {
-    margin-left: -2rem;
-    margin-right: -2rem;
     font-size: 4rem;
   }
 }
@@ -95,7 +93,6 @@ h2 {
   h2 {
     margin-top: 2.5rem;
     font-size: 1.75rem;
-    margin-right: -4rem;
   }
 }
 h3 {
