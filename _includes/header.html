@@ -1,20 +1,7 @@
 <header class="site-header">
   <a class="site-title" href="{{ site.baseurl }}/">{{ site.initials }}</a>
-    <div class="page-topper" style="{% if page.image %}background-image: url({{ site.basurl }}/{{ page.image }});{% endif %}">
-      {% if page.text %}
-      <h1 class="">{{ page.text }}</h1>
-      {% endif %}
-    </div>
+    <div class="page-topper" style="{% if page.image %}background-image: url({{ site.basurl }}/{{ page.image }});{% endif %}"></div>
   <div class="wrapper">
-    <nav class="site-nav">
-      <div class="trigger">
-        <a class="page-link" href="{{ site.baseurl }}/">Posts</a>
-        {% for my_page in site.pages %}
-          {% if my_page.title and my_page.hide != true %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-          {% endif %}
-        {% endfor %}
-      </div>
-    </nav>
+    {% include nav.html %}
   </div>
 </header>
