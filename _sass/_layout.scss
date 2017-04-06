@@ -3,26 +3,23 @@
   // Positioning context for the mobile navigation icon
   position: relative;
   text-align: center;
-
-  .site-title {
-    position: fixed;
-    left: 10px;
-    top: 10px;
-    opacity: 0.75;
-    font-size: 26px;
-    background: #fff;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 50px;
-  }
 }
-@include media-query($on-palm) {
-  .site-header {
-    .site-title {
-      position: absolute;
-    }
+
+.site-title {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  opacity: 0.75;
+  font-size: 26px;
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  z-index: 1000;
+  @include media-query($on-palm) {
+    z-index: 300;
   }
 }
 
@@ -45,20 +42,30 @@
 }
 
 .site-content {
-  .full & { margin-top: $page-topper-height-full; }
   margin-top: $page-topper-height;
   background-color: #fff;
   z-index: 500;
   position: relative;
+  .full & {
+    margin-top: $page-topper-height-full;
+    @include media-query($on-palm) {
+      margin-top: $page-topper-height;
+    }
+  }
 }
 
 .page-topper, .page-topper-mask {
-  .full & { height: $page-topper-height-full; }
   height: $page-topper-height;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
+  .full & {
+    height: $page-topper-height-full;
+    @include media-query($on-palm) {
+      height: $page-topper-height;
+    }
+  }
 }
 
 .page-topper {
@@ -103,7 +110,7 @@
     width: $site-nav-after-width;
     height: 0px;
     border-bottom: 3px solid $brand-color;
-    top: 80px;
+    top: 100px;
     display: block;
     left: 50%;
     margin-left: -1 * $site-nav-after-width / 2;
@@ -120,6 +127,7 @@
   h1 {
     font-weight: 500;
     text-align: right;
+    @include media-query($on-palm) { font-size: 1.88rem; }
   }
   .landing-base {
     display: flex;
@@ -136,11 +144,16 @@
   .background {
     background-position: center;
     background-repeat: no-repeat;
+    @include media-query($on-palm) {
+      background-position-x: -287px;
+      background-size: 300%;
+    }
   }
   .content {
     padding: 100px;
     flex: 1;
     z-index: 100;
+    @include media-query($on-palm) { padding: 20px; }
   }
   .site-nav {
     &::after { display: none; }
@@ -153,20 +166,6 @@
       fill: #fff;
     }
   }
-}
-@include media-query($on-palm) {
-    .landing {
-      .content {
-        padding: 20px;
-      }
-      .background {
-        background-position-x: -287px;
-        background-size: 300%;
-      }
-      h1 {
-        font-size: 1.88rem;
-      }
-    }
 }
 
 /** Page content */

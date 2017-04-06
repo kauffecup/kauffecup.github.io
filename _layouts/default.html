@@ -4,11 +4,12 @@ layout: base
 
 {% include page-topper.html %}
 <div class="site-content">
-  {% include header.html %}
   <div class="wrapper">
+    {% include nav.html %}
     <div class="page-content">
       {{ content }}
     </div>
   </div>
   {% include footer.html %}
 </div>
+<a class="site-title" href="{{ site.baseurl }}/">{{ site.initials }}</a>

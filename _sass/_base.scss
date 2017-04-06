@@ -19,6 +19,9 @@ body {
   -o-font-feature-settings: "kern" 1;
   font-feature-settings: "kern" 1;
   font-kerning: normal;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /** Set `margin-bottom` to maintain vertical rhythm */
