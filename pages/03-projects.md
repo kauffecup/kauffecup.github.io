@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 permalink: /projects/
-image: assets/images/about.jpg
+image: assets/images/projects.jpg
 format: full
 ---
 
