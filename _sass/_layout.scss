@@ -17,17 +17,6 @@
     text-align: center;
     line-height: 50px;
   }
-
-  .page-topper {
-    .full & { height: 450px; }
-    height: 250px;
-    background-position: center;
-    background-size: cover;
-    background-color: $brand-color;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 }
 @include media-query($on-palm) {
   .site-header {
@@ -55,6 +44,34 @@
   }
 }
 
+.site-content {
+  .full & { margin-top: $page-topper-height-full; }
+  margin-top: $page-topper-height;
+  background-color: #fff;
+  z-index: 500;
+  position: relative;
+}
+
+.page-topper, .page-topper-mask {
+  .full & { height: $page-topper-height-full; }
+  height: $page-topper-height;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.page-topper {
+  background-position: center;
+  background-size: cover;
+  background-color: $brand-color;
+}
+
+.page-topper-mask, .landing-mask {
+  background: $brand-color;
+  opacity: 0.7;
+}
+
 .footer-heading {
   font-size: 18px;
   margin-bottom: $spacing-unit / 2;
@@ -71,7 +88,7 @@
 .site-nav {
   text-align: center;
   position: relative;
-  margin: $spacing-unit 0;
+  padding: $spacing-unit 0;
   font-size: 1.3rem;
   .page-link {
     // Gaps between nav items, but not on the last one
@@ -86,7 +103,7 @@
     width: $site-nav-after-width;
     height: 0px;
     border-bottom: 3px solid $brand-color;
-    top: 38px;
+    top: 80px;
     display: block;
     left: 50%;
     margin-left: -1 * $site-nav-after-width / 2;
@@ -111,7 +128,7 @@
     width: 100%;
     overflow: auto;
   }
-  .background, .mask {
+  .background, .landing-mask {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -119,10 +136,6 @@
   .background {
     background-position: center;
     background-repeat: no-repeat;
-  }
-  .mask {
-    background: $brand-color;
-    opacity: 0.7;
   }
   .content {
     padding: 100px;
