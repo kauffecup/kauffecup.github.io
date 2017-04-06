@@ -95,22 +95,63 @@
 
 /** landing page */
 .landing {
-  display: flex;
-  flex-direction: column;
   height: 100%;
   width: 100%;
+  &, h1, .site-nav a, {
+    color: #fff;
+  }
+  h1 {
+    font-weight: 500;
+    text-align: right;
+  }
+  .landing-base {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+  }
+  .background, .mask {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  .background {
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .mask {
+    background: $brand-color;
+    opacity: 0.7;
+  }
   .content {
     padding: 100px;
     flex: 1;
+    z-index: 100;
   }
   .site-nav {
     &::after { display: none; }
+  }
+  .site-footer::before {
+    border-color: #fff;
+  }
+  .social-media-list {
+    .icon svg path {
+      fill: #fff;
+    }
   }
 }
 @include media-query($on-palm) {
     .landing {
       .content {
         padding: 20px;
+      }
+      .background {
+        background-position-x: -287px;
+        background-size: 300%;
+      }
+      h1 {
+        font-size: 1.88rem;
       }
     }
 }
