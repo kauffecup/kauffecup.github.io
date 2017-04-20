@@ -12,7 +12,7 @@ a visual output like film editing or anything music related (I've certainly made
 some YouTube videos that I'm too embarrassed to embed right now, but trust me,
 they're great). You can find me singing
 [here on Spotify](https://open.spotify.com/track/5cDHaVTQ8coHB5NLssfp9S) from
-back in my glory days in an all male college a cappella group.
+back in my glory days in an all male college A Cappella group.
 
 Based in Cambridge, MA. Made in NJ.
 
@@ -43,7 +43,7 @@ the server-side technology for
 creating a physical conversational agent for different conversation and
 automation scenarios.
 
-  - Developed the api for voice interaction, designed the database for storing
+  - Developed the API for voice interaction, designed the database for storing
     user metadata, and built an admin UI for testing, debugging, and device
     management.
   - Collaborated with research teams across the world in building a
@@ -57,18 +57,20 @@ automation scenarios.
 
 #### Developer Advocate (July 2015 - August 2016)
 
-Recruited internally to work with developers, enabling rapid application
-development on top of IBM’s PaaS Bluemix, and using IBM Watson Machine Learning
-and Natural Language Processing APIs, despite the job requirements calling for
-8+ years experience in this area.
+Promoted the adoption of IBM’s Cloud Platform, Bluemix, by collaborating with
+and enabling developers, leveraging the platform’s rapid application development
+and IBM Watson Machine Learning and Natural Language Processing APIs. Recruited
+internally despite the job requirements calling for 8+ years experience in this
+area.
 
-  - Led 8 technical sessions, and attended 20 developer conferences and meetups
-    in 6 countries, covering topics from application level logic, to deploying
-    apps, to creating insights and visualizations using Watson services, to
-    building Slack bots entirely out of serverless technology. By the last talk,
-    the room was standing room only.
+  - Led and facilitated 10 technical sessions, talks, and workshops, and
+    participated in over 20 developer conferences and Meetups in 6 countries,
+    covering topics from application level logic, to deploying apps, to creating
+    insights and visualizations using Watson services, to building Slack bots
+    entirely out of serverless technology. By the last talk, the room was
+    standing room only.
   - Built and open-sourced 6 demo applications showcasing different aspects of
-    the platform and APIs; from building visualizations to IoT and
+    the platform and APIs, from building visualizations to IoT and
     microservice-based systems. These demos showcased the innovation that can be
     built using a combination of different services in the Bluemix Catalog.
   - Wrote a series of blog posts detailing development and Bluemix knowledge
@@ -85,7 +87,7 @@ and Natural Language Processing APIs, despite the job requirements calling for
 
 Front-end web developer for IBM Verse, specifically on search, threads,
 analytics, folders, and the overall framework. Quickly rose to leadership
-positions and was involved in many design, architecture, and infrastructure
+positions and was involved in key design, architecture, and infrastructure
 decisions, while advocating for clean and modular code throughout the project’s
 entire codebase.
 
@@ -138,4 +140,4 @@ MongoDB, CouchDB, Redis, MySQL
   - Studied trumpet for many years, including multiple years of professional pit
     orchestra, as well as self-taught on guitar and piano.
   - Sang in the Cornell University Glee Club, and was musical director and
-    president of the official a cappella subset.
+    president of the official A Cappella subset.
