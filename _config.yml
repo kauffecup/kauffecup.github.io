@@ -27,7 +27,7 @@ exclude:
 permalink: /:title/
 
 # automatically generate a sitemap
-gems:
+plugins:
   - jekyll-sitemap
 
 # prose.io configuration
