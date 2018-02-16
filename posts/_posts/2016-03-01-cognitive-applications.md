@@ -25,6 +25,8 @@ aims at making human kinds of problems computable.
 numerical problems, but *hypotheses*, reasoned arguments and recommendations
 about more complex — and meaningful — bodies of data.
 
+{% include ad-blog.html %}
+
 ### but what does any of this actually mean?
 
 When dealing with buzzwords, it's important to filter out the bullsh*t from the
@@ -114,6 +116,8 @@ at designing UIs - especially crazy-awesome cognitive ones.
 
 But we can collectively imagine a UI that updates and adapts as the "brain"
 interprets the user input. And isn't that cool?
+
+{% include ad-blog.html %}
 
 ### one last thing
 

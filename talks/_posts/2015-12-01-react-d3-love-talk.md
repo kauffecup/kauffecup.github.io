@@ -14,3 +14,5 @@ abstract: >
   visualizations. Today we'll be talking about how to use them in tandem with as
   few side-effects as possible.
 ---
+
+{% include ad-talk.html %}

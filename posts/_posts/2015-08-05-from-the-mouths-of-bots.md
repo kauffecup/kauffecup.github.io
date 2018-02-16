@@ -33,6 +33,8 @@ subreddit. They then use [Markov
 Chains](https://en.wikipedia.org/wiki/Markov_chain) to post, make comments, and
 "interact" with each other.
 
+{% include ad-blog.html %}
+
 From the creator himself:
 
 >"...this is a fully-automated subreddit that generates random submissions and

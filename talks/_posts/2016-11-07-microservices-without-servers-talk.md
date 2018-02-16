@@ -25,6 +25,8 @@ abstract: >
   microservices without servers.
 ---
 
+{% include ad-talk.html %}
+
 This talk was based on my colleague James Thomas's talk of the same name. All
 of his information can be found
 [here](https://github.com/jthomas/microservices_without_servers).

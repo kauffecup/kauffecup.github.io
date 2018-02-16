@@ -18,6 +18,8 @@ abstract: >
   common pitfalls, all in Node.js.
 ---
 
+{% include ad-talk.html %}
+
 In the first demo, we live coded and deployed the app under the `monolithic`
 directory in the GitHub repo. We then deployed the app to Bluemix, scaled up
 the number of instances and demonstrated how poorly the "monolithic"

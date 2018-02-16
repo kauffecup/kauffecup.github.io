@@ -42,6 +42,8 @@ following three categories:
 
 We'll do our best to construct RGB values from these... more on that later.
 
+{% include ad-blog.html %}
+
 Of course, this doesn't have to be hooked up to Slack, but can be applied to any
 real time stream of text. It would be interesting to see a visualization in real
 time of a Twitter feed, or the comments on a blog, or maybe even the captions on
@@ -181,6 +183,8 @@ export default text => new Promise((resolve, reject) => {
 
 I defined this in a separate file just to keep my main file cleaner... but that
 isn't necessary.
+
+{% include ad-blog.html %}
 
 ## a few notes
 

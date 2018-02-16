@@ -14,6 +14,7 @@ linkedin_url: https://www.linkedin.com/in/jkaufman5
 # site Settings
 url: "http://jkaufman.io" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog
+ad_separator: "<!--ad-->"
 
 # build settings
 future: true

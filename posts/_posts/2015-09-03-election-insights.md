@@ -32,6 +32,8 @@ data. Alchemy performs natural language processing on 75,000+ news sources as
 they are published. It extracts entities and keywords, categorizes the article,
 performs sentiment analyses, and a whole lot more.
 
+{% include ad-blog.html %}
+
 Specifically, [the app](http://electioninsights.mybluemix.net/) uses Alchemy's
 taxonomy breakdown to focus on all things election. Alchemy pulls out entities
 from the articles and attributes how that article feels about that entity in a
@@ -161,6 +163,8 @@ aggregateEntities: function (start, end, limit) {
   });
 }
 ~~~
+
+{% include ad-blog.html %}
 
 It matches the subset of entities by date, groups them by their text, sums the
 counts, averages the sentiment, sorts them by their value descending, and limits

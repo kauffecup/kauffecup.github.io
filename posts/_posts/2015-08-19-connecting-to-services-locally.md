@@ -18,6 +18,8 @@ local environment variables for every different project you're working on.
 **Note: this post is specific to using the Node.js runtime, but the same
 technique can be applied to other runtimes.**
 
+{% include ad-blog.html %}
+
 If you navigate over to your environment variables for a given application in
 Bluemix, you'll see something like:
 

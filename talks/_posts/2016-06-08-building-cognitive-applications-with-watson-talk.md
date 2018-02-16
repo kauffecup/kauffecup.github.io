@@ -24,6 +24,8 @@ abstract: >
   color.
 ---
 
+{% include ad-talk.html %}
+
 Example Demos:
 
   - [Election Insights](http://electioninsights.mybluemix.net/) ([code](https://github.com/IBM-Bluemix/election-insights)) ([blog](/election-insights))

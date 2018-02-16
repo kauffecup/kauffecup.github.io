@@ -22,6 +22,8 @@ and jobs that feed in to each other.
 There are a lot of screenshots in this post, but fear not - they're here to make
 things easier to explain, not because this is a difficult process.
 
+{% include ad-blog.html %}
+
 Prerequisites:
 
   1. A [Bluemix](https://bluemix.net/) account

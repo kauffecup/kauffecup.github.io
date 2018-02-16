@@ -20,6 +20,8 @@ Sync][ls]. The end game allows you to change code, hit save on your local IDE,
 have those changes propagate up to Bluemix, and trigger an automagic Webpack
 rebundle, with 0 downtime or reploys.
 
+{% include ad-blog.html %}
+
 ## motivation
 
 Let's get this out of the way early.
@@ -144,6 +146,8 @@ module.exports = {
 ~~~
 
 And that's it for webpack!
+
+{% include ad-blog.html %}
 
 The final bit of server-side-sorcery is to setup the Webpack middleware to use
 the config we just created. Assuming we're using express and have created our

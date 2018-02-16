@@ -21,6 +21,8 @@ was done, keep scrollin'.
 
 ...who doesn't love bubbles?
 
+{% include ad-blog.html %}
+
 ## let's get down to business
 
 When Connecting React+D3 I followed the three guidelines [presented
@@ -261,6 +263,8 @@ know where they should go and how big they should be. Each D3 chained method is
 applied to each node in our dataset. This transitions the existing nodes from
 their current location to their new location. It is only applied to nodes whose
 `_id` is both in the current set, and the new set.
+
+{% include ad-blog.html %}
 
 ### Handle incoming nodes
 

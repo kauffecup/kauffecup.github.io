@@ -20,6 +20,8 @@ question. Here's a gif if you still need some convincing:
 
 Play with the app yourself [here][app].
 
+{% include ad-blog.html %}
+
 This sort of picks up where [Ambient Sentiment](/ambient-sentiment) left off,
 and by "sort of" I mean it reuses a majority of the same code for converting
 the results of the Watson Tone Analysis into color. Rather than rendering the
@@ -129,6 +131,8 @@ So what's happening here is we're saying that joy and confidence contribute to
 yellow, sadness and tentativeness and analytics contribute to blue, anger and
 fear contribute to red, openness agreeableness and disgust contribute to green.
 This is by no means perfect, but it sort of gets the job done.
+
+{% include ad-blog.html %}
 
 ### `index.html`
 

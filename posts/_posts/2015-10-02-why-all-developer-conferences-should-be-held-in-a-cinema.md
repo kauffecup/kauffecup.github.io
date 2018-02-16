@@ -20,6 +20,8 @@ The main issues I've experienced in conferences always center around audiovisual
 equipment. Who hasn't seen someone fumbling with a projector or a mic for the
 first few seconds/minutes while beginning a talk?
 
+{% include ad-blog.html %}
+
 Movie theaters have arguably the best audiovisual equipment around; I mean...
 just check out how huge this screen is:
 

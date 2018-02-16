@@ -15,6 +15,8 @@ discussion that's more casual and informal about Cognitive Applications. No
 slide deck, no demo, just a conversational, microphone engagement with a
 sitting and standing audience.
 
+{% include ad-talk.html %}
+
 Here's a [related blog post](/cognitive-applications) I wrote on the same topic.
 
 This is the 7m interview that was filmed after the meetup:

@@ -23,6 +23,8 @@ I inevitably post about that, I wouldn't want that post to get bogged down
 authentication details... so here we are; a nice, standalone post that I'll be
 able to point to, and say "here! here's how ya do it!"
 
+{% include ad-blog.html %}
+
 This example is essentially a variation on the `authorization_code` demo from
 Spotify's [Web Auth Examples][wae]. The main difference is the client code;
 whereas their example is contained in one `index.html` file, this example shows
@@ -224,6 +226,8 @@ This allows us to render our User page...
 
 That's it! By defining error and user pages, we can control what's displayed
 in the client by routing it correctly from the server.
+
+{% include ad-blog.html %}
 
 The client application structure is a simplified version of my [React + Redux +
 Webpack Boilerplate][bp] for better ease of understanding. It can certainly be

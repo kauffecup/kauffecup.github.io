@@ -30,6 +30,8 @@ contains rows of messages, the message read area contains an open message with a
 bunch of associated actions and content, and the calendar is full of entries.
 This application will contain three top-level functional area components.
 
+{% include ad-blog.html %}
+
 In very large applications it's best to have each area manage its own state,
 meaning that all three of the functional area components will hold state. In
 smaller applications, it's best to have the main top level component manage all
@@ -152,6 +154,8 @@ class MyApp extends React.Component {
 
 React.render(<MyApp />, document.body);
 ~~~
+
+{% include ad-blog.html %}
 
 In a large application, we should define a wrapper top-level functional area
 component that would look like:

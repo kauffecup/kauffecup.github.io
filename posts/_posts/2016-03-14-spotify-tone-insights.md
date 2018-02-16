@@ -30,6 +30,8 @@ discuss key code snippets that power the more crucial parts of the
 application. Again, the app is [here][app], and the code is [here][git]
 if you want to play around with either before finishing this post.
 
+{% include ad-blog.html %}
+
 ## ...why do this at all?
 
 This is a question I ask myself often when throwing together tiny apps
@@ -175,6 +177,8 @@ access token get's set during our authentication workflow:
 ~~~js
 spotifyApi.setAccessToken(accessToken);
 ~~~
+
+{% include ad-blog.html %}
 
 Ok, so, once we have the tracks from `spotifyApi.getPlaylist()`, we make
 requests for each tracks tone information. We do this by hitting the

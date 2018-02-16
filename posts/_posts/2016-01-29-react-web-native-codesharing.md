@@ -34,6 +34,8 @@ once, write everywhere" framework - the idea being that you tailor your
 implementation to the platform you're writing for. That said, you can still
 share a great deal of logic between your applications.
 
+{% include ad-blog.html %}
+
 In this post I'll be discussing how you can take a more "middle of the road"
 approach between these mentalities. We'll be sharing all the application logic
 while keeping the rendering code specific to each platform.
@@ -241,6 +243,8 @@ Rather than go through each individual difference and similarity one by one (as
 that would result in a novel's worth of explanation) we're going to move on to
 the scripts defined in `package.json` that allow you to build and run this bad
 boy...
+
+{% include ad-blog.html %}
 
 ## Configured Scripts
 

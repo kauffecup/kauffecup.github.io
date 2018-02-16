@@ -22,4 +22,6 @@ abstract: >
   cloud solution for deploying Docker.
 ---
 
+{% include ad-talk.html %}
+
 *A variation on my colleague [Ryan Baxter's talk of the same name](http://ryanjbaxter.com/2015/07/29/video-destination-cloud-deploying-applications-to-the-cloud-with-docker/).*

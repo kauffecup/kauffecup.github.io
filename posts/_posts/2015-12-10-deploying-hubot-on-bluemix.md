@@ -30,6 +30,8 @@ on [GitHub](https://github.com/github/hubot-scripts).
 
 [Official Docs Here](https://hubot.github.com/)
 
+{% include ad-blog.html %}
+
 ## Fun things to do with Hubot
 
 ![picture time](/assets/images/post-images/hubot.png)
